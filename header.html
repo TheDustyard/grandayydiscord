@@ -1,0 +1,25 @@
+<link rel="stylesheet" type="text/css" href="https://dusterthefirst.github.io/res/include/header.css">
+<div class="desktop">
+    <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/rules">Rules</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfna08g-yWh-XowvP2WGQhyrGYTOU9V3IBEaItRuoIXQQY4hg/viewform?usp=sf_link">Feedback</a></li>
+    </ul>
+</div>
+<div class="mobile">
+    <div id="menu">
+        <div id="drpbtn" onclick="openMenu()">&#9776;</div>
+        <a id="help" href="https://docs.google.com/forms/d/e/1FAIpQLSfna08g-yWh-XowvP2WGQhyrGYTOU9V3IBEaItRuoIXQQY4hg/viewform?usp=sf_link">Feedback</a>
+        <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/rules">Rules</a></li>
+        <li><a href="/about">About</a></li>
+        </ul>
+    </div>
+</div>
+<script>
+    function openMenu(){
+        $("#menu ul").toggleClass("open");
+    }
+</script>
