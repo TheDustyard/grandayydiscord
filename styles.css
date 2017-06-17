@@ -3,16 +3,6 @@ html, body{
     text-rendering: optimizeLegibility;
 }
 
-ol {
-    counter-reset: item;
-    list-style-type: none;
-}
-
-ol li {
-    margin: 20px;
-    font-size: 1.1em;
-}
-
 h1 {
     background-color: #23272A;
     text-align: center;
@@ -22,7 +12,21 @@ h1 {
     margin: 0;
 }
 
-ol li:before {
+h2, h3, h4, h5, h6{
+    text-align: center;
+}
+
+ol li {
+    margin: 20px;
+    font-size: 1.1em;
+}
+
+ol.rules {
+    counter-reset: item;
+    list-style-type: none;
+}
+
+ol.rules li:before {
     content: 'Rule ' counter(item, decimal) '. ';
     counter-increment: item;
     font-weight: bold;

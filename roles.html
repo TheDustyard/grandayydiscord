@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grandayy's Discord Rules</title>
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="icon" href="/favicon.png">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    </head>
+    <body>
+        <div id="header"></div>
+        <div id="headerspacer" class="desktop">&nbsp;</div>
+        <div id="headerspacer" class="mobile">&nbsp;</div>
+        <script>$("#header").load('/header.html');</script>
+        
+        <h1>Roles</h1>
+        
+        <div id="Master Of Disguise">Master Of Disguise</div>
+        <div id="Server Manager">Server Manager</div>
+        <div id="Villian">Villian</div>
+        <div id="Master NETEctive">Master NETEctive</div>
+        <div id="Net">Net</div>
+        <div id="Forum Owner">Forum Owner</div>
+        <div id="Superhero">Superhero</div>
+        <div id="History">History</div>
+        <div id="All Star">All Star</div>
+        <div id="First!">First!</div>
+        <div id="LAMB SAUCEEEE">LAMB SAUCEEEE</div>
+        <div id="covfefe">covfefe</div>
+        <div id="Vsauce">Vsauce</div>
+        <div id="Bannana peel">Bannana peel</div>
+        <div id="Pirate">Pirate</div>
+        <div id="Meme War Champion">Meme War Champion</div>
+        <div id="Early Memer">Early Memer</div>
+        <div id="Sportabot">Sportabot</div>
+        
+    </body>
+    <script>
+        var url = window.location.href;
+        var hash = url.substring(url.indexOf("#")+1);
+        console.log(hash);
+        
+        var element = document.getElementById(hash);
+        
+        if (element !== null){
+            element.addClass("anchored");
+        }
+        
+    </script>
+</html>
