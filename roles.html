@@ -6,6 +6,45 @@
         <link rel="stylesheet" href="/styles.css">
         <link rel="icon" href="/favicon.png">
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <style>
+            @keyframes flash {
+                0%, 15% {
+                    background-color: #23272A;
+                }
+                100% {
+                    background-color: transparent;
+                }
+            }
+            
+            .anchored{
+                font-weight: bolder;
+                animation-iteration-count: 1;
+                animation-duration: 2s;
+                animation-name: flash;
+            }
+            
+            .roles {
+                padding: 10px;
+                text-align: center;
+                padding: 5px;
+                font-size: 1.5em;
+                width: 100%;
+            }
+            
+            table {
+                width: 100%;
+            }
+            
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+            
+            a:hover, a:focus {
+                color: skyblue;
+                text-decoration: none;
+            }
+        </style>
     </head>
     <body>
         <div id="header"></div>
@@ -15,24 +54,30 @@
         
         <h1>Roles</h1>
         
-        <div id="Master Of Disguise">Master Of Disguise</div>
-        <div id="Server Manager">Server Manager</div>
-        <div id="Villian">Villian</div>
-        <div id="Master NETEctive">Master NETEctive</div>
-        <div id="Net">Net</div>
-        <div id="Forum Owner">Forum Owner</div>
-        <div id="Superhero">Superhero</div>
-        <div id="History">History</div>
-        <div id="All Star">All Star</div>
-        <div id="First!">First!</div>
-        <div id="LAMB SAUCEEEE">LAMB SAUCEEEE</div>
-        <div id="covfefe">covfefe</div>
-        <div id="Vsauce">Vsauce</div>
-        <div id="Bannana peel">Bannana peel</div>
-        <div id="Pirate">Pirate</div>
-        <div id="Meme War Champion">Meme War Champion</div>
-        <div id="Early Memer">Early Memer</div>
-        <div id="Sportabot">Sportabot</div>
+        <div class="roles">
+            <h2>Ranks (mee6 level)</h2>
+            <div class="LAMBSAUCEEEE" id="LAMBSAUCEEEE">LAMB SAUCEEEE - 50</div>
+            <div class="covfefe" id="covfefe">covfefe - 40</div>
+            <div class="Vsauce" id="Vsauce">Vsauce - 30</div>
+            <div class="BannanaPeel" id="BannanaPeel">Bannana peel - 20</div>
+            <div class="Pirate" id="Pirate">Pirate - 10</div>
+            <h2>Staff</h2>
+            <div class="MasterOfDisguise" id="MasterOfDisguise">Master Of Disguise - Grandayy</div>
+            <div class="ServerManager" id="ServerManager">Server Manager - Super Admin</div>
+            <div class="Villian" id="Villian">Villian - Administrator</div>
+            <div class="Net" id="Net">Net - Moderator</div>
+            <h2>Contributors</h2>
+            <div class="ForumOwner" id="ForumOwner">Forum Owner - Owns and operates <a href="https://grandayy.net">Grandayy's Forum</a></div>
+            <div class="Superhero" id="Superhero">Superhero - Donates $10+ on <a href="https://www.patreon.com/grandayy">Patreon</a></div>
+            <div class="MasterNETective" id="MasterNETective">Master NETective - Detective d00t</div>
+            <div class="AllStar" id="AllStar">All Star - Host's Memewars</div>
+            <div class="First" id="First">First! - </div>
+            <h2>Other</h2>
+            <div class="History" id="History">History - 500+ Following on a social platform</div>
+            <div class="MemeWarChampion" id="MemeWarChampion">Meme War Champion - Won the memewars</div>
+            <div class="EarlyMemer" id="EarlyMemer">Early Memer - Was here, and active when we hit 1k memebers</div>
+            <div class="Sportabot" id="Sportabot">Sportabot - A bot</div>
+        </div>
         
     </body>
     <script>
@@ -41,9 +86,10 @@
         console.log(hash);
         
         var element = document.getElementById(hash);
+        console.log(element);
         
         if (element !== null){
-            element.addClass("anchored");
+            element.className += " anchored";
         }
         
     </script>
