@@ -1,96 +1,115 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Grandayy's Discord Rules</title>
-        <link rel="stylesheet" href="/styles.css">
-        <link rel="icon" href="/favicon.png">
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <style>
-            @keyframes flash {
-                0%, 15% {
-                    background-color: #23272A;
-                }
-                100% {
-                    background-color: transparent;
-                }
-            }
-            
-            .anchored{
-                font-weight: bolder;
-                animation-iteration-count: 1;
-                animation-duration: 2s;
-                animation-name: flash;
-            }
-            
-            .roles {
-                padding: 10px;
-                text-align: center;
-                padding: 5px;
-                font-size: 1.5em;
-                width: 100%;
-            }
-            
-            table {
-                width: 100%;
-            }
-            
-            a {
-                color: inherit;
-                text-decoration: none;
-            }
-            
-            a:hover, a:focus {
-                color: skyblue;
-                text-decoration: none;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="header"></div>
-        <div id="headerspacer" class="desktop">&nbsp;</div>
-        <div id="headerspacer" class="mobile">&nbsp;</div>
-        <script>$("#header").load('/header.html');</script>
-        
-        <h1>Roles</h1>
-        
-        <div class="roles">
-            <h2>Ranks (mee6 level)</h2>
-            <div class="LAMBSAUCEEEE" id="LAMBSAUCEEEE">LAMB SAUCEEEE - 50</div>
-            <div class="covfefe" id="covfefe">covfefe - 40</div>
-            <div class="Vsauce" id="Vsauce">Vsauce - 30</div>
-            <div class="BananaPeel" id="BananaPeel">Banana peel - 20</div>
-            <div class="Pirate" id="Pirate">Pirate - 10</div>
-            <h2>Staff</h2>
-            <div class="MasterOfDisguise" id="MasterOfDisguise">Master Of Disguise - Grandayy</div>
-            <div class="ServerManager" id="ServerManager">Server Manager - Super Admin</div>
-            <div class="Villain" id="Villain">Villain - Administrator</div>
-            <div class="Net" id="Net">Net - Moderator</div>
-            <h2>Contributors</h2>
-            <div class="ForumOwner" id="ForumOwner">Forum Owner - Owns and operates <a href="https://grandayy.net">Grandayy's Forum</a></div>
-            <div class="Superhero" id="Superhero">Superhero - Donates $10+ on <a href="https://www.patreon.com/grandayy">Patreon</a></div>
-            <div class="MasterNETective" id="MasterNETective">Master NETective - Detective d00t</div>
-            <div class="AllStar" id="AllStar">All Star - Hosts Memewars or contributed in another way</div>
-            <div class="First" id="First">First! - Helped set up the server but is no longer staff</div>
-            <h2>Other</h2>
-            <div class="History" id="History">History - 1000+ Following on a social platform</div>
-            <div class="MemeWarChampion" id="MemeWarChampion">Meme War Champion - Won the memewars</div>
-            <div class="EarlyMemer" id="EarlyMemer">Early Memer - Was here, and active when we hit 1k memebers</div>
-            <div class="Sportabot" id="Sportabot">Sportabot - A bot</div>
-        </div>
-        
-    </body>
-    <script>
-        var url = window.location.href;
-        var hash = url.substring(url.indexOf("#")+1);
-        console.log(hash);
-        
-        var element = document.getElementById(hash);
-        console.log(element);
-        
-        if (element !== null){
-            element.className += " anchored";
-        }
-        
-    </script>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bulma.css">
+  <link rel="stylesheet" href="css/hover.css">
+  <link rel="stylesheet" href="css/hover.min.css">
+  <title>Grandayy | Roles</title>
+</head>
+<body class="body">
+
+  <div class="block">
+    <div class="heading" id="heading">
+      <h1 class="title is-3">Grandayy's Server</h1>
+      <br>
+      <p class="subtitle">The Roles... :D</p>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+  <div class="block">
+    <nav class="nav">
+      <div class="nav-left">
+        <div class="nav-item">
+        <a href="#" class="title is-4 hvr-grow">Grandayy's server</a>
+      </div>
+      </div>
+      <div class="nav-right">
+        <div class="nav-item">
+        <a href="rules.html" class="title is-5 hvr-sink">Server Rules</a>
+      </div>
+      <div class="nav-item">
+      <a href="roles.html" class="title is-5 hvr-sink">Server Roles</a>
+    </div>
+    <div class="nav-item">
+    <a href="staffrules.html" class="title is-5 hvr-sink">Staff Rules</a>
+  </div>
+      </div>
+
+    </nav>
+  </div>
+  <hr>
+  <br>
+  <div class="block">
+    <h1 class="title" id="center"><u>Mee6 Ranks</u></h1>
+    <div id="center">
+    <p>LAMB SAUCEEEE - 50</p>
+    <br>
+    <p>covfefe - 40</p>
+    <br>
+    <p>Vsauce - 30</p>
+    <br>
+    <p>Banana peel - 20</p>
+    <br>
+    <p>Pirate - 10</p>
+  </div>
+  </div>
+  <br>
+  <hr>
+  <br>
+
+  <div class="block">
+    <h1 class="title" id="center"><u>Staff Roles</u></h1>
+    <div id="center">
+    <p>Master Of Disguise - Grandayy</p>
+    <br>
+    <p>Server Manager - Super Admin</p>
+    <br>
+    <p>Villain - Administrator</p>
+    <br>
+    <p>Net - Moderator</p>
+  </div>
+  </div>
+  <br>
+  <hr>
+  <br>
+
+  <div class="block">
+    <h1 class="title" id="center"><u>Contributors</u></h1>
+    <div id="center">
+    <p>Forum Owner - Owns and operates Grandayy's Forum</p>
+    <br>
+    <p>Superhero - Donates $10+ on Patreon</p>
+    <br>
+    <p>Master NETective - Detective d00t</p>
+    <br>
+    <p>All Star - Hosts Memewars or contributed in another way</p>
+    <br>
+    <p>First! - Helped set up the server but is no longer staff</p>
+  </div>
+  </div>
+  <br>
+  <hr>
+  <br>
+
+  <div class="block">
+    <h1 class="title" id="center"><u>Other</u></h1>
+    <div id="center">
+    <p>History - 1000+ Following on a social platform</p>
+    <br>
+    <p>Meme War Champion - Won the memewars</p>
+    <br>
+    <p>Early Memer - Was here, and active when we hit 1k memebers</p>
+    <br>
+    <p>Sportabot - A bot</p>
+  </div>
+  </div>
+
+
+
+</body>
 </html>
