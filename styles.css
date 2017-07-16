@@ -61,11 +61,11 @@ p {
 }
 
 .ServerManager{
-    color: #AD1457;
+    color: #B0B2B6;
 }
 
 .Villain {
-    color: #a21ae0;
+    color: #AD1457;
 }
 
 .MasterNETective {
@@ -76,8 +76,12 @@ p {
     color: #3498DB;
 }
 
-.ForumOwner {
+.Katarina {
     color: #ec4747;
+}
+
+.Stingy {
+    color: #927D3A;
 }
 
 .Superhero {
@@ -101,7 +105,7 @@ p {
 }
 
 .covfefe {
-    color: #ffc200;
+    color: #913B9F;
 }
 
 .Vsauce {
@@ -114,6 +118,10 @@ p {
 
 .Pirate {
     color: #119e0b;
+}
+
+.TheLegend27 {
+    color: #913B9F;
 }
 
 .MemeWarChampion {
