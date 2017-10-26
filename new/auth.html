@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let querys = getJsonFromUrl();
+            if (!querys.access_token || !querys.expires_in || !querys.scope || !querys.token_type) {
+                window.location.replace("./");
+            } else {
+                setCookie('access_token', querys.access_token, parseInt(querys.expires_in));
+                setCookie('state'       , querys.state       , parseInt(querys.expires_in));
+                setCookie('scope'       , querys.scope       , parseInt(querys.expires_in));
+                setCookie('token_type'  , querys.token_type  , parseInt(querys.expires_in));
+                let xhr = new XMLHttpRequest()
+                xhr.open('GET', 'https://discordapp.com/api/v6/users/@me', true);
+                xhr.setRequestHeader('Authorization', querys.token_type + " " + querys.access_token);
+                xhr.send();
+                xhr.onloadend = (e) => {
+                    setCookie('user', xhr.responseText, parseInt(querys.expires_in));
+                    window.location.replace("./");
+                };
+            }
+            function getJsonFromUrl() {
+                var query = location.hash.substr(1);
+                var result = {};
+                query.split("&").forEach(function(part) {
+                    var item = part.split("=");
+                    result[item[0]] = decodeURIComponent(item[1]);
+                });
+                return result;
+            }
+            function setCookie(cname, cvalue, exms) {
+                var d = new Date();
+                d.setTime(d.getTime() + exms);
+                var expires = "expires="+ d.toUTCString();
+                document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+            }
+        </script>
+    </head>
+    <body>
+        Logging you in...<br>
+        please wait
+    </body>
+</html>
