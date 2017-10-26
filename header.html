@@ -6,6 +6,15 @@
         <li><a href="/staffrules.html">Staff Rules</a></li>
         <li><a href="/roles.html">Roles</a></li>
         <li><a href="/feedback.html">Feedback</a></li>
+        <li style="float: right">
+            <div id="login">
+                <a href="https://discordapp.com/oauth2/authorize?response_type=token&client_id=307231810218360832&scope=identify&redirect_uri=https://grandayy.github.io/auth.html">Login</a>                    
+            </div>
+            <div id="logout" style="display: none">
+                <a onclick="logout()" style="display: inline-block;">Logout</a>
+                <span id="userid" style="font-size: 1.2em; margin-right: 10px;"></span>                                        
+            </div>
+        </li>
     </ul>
 </div>
 <div class="mobile">
@@ -20,6 +29,43 @@
         </ul>
     </div>
 </div>
+<script>
+    console.log(document.cookie);
+    if (!getCookie('user')) {
+        // DO NOTHING
+    } else {
+        let user = JSON.parse(getCookie('user'));
+        document.getElementById('login').style.display = "none";
+        document.getElementById('logout').style.display = "inline-block";
+
+        document.getElementById('userid').innerHTML = `${user.username}<span style="font-size: .7em; color: grey">#${user.discriminator}</span>`
+    }
+    function logout() {
+        setCookie('user', null, -100000);
+        location.reload();
+    }
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i <ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return null;
+    }
+    function setCookie(cname, cvalue, exms) {
+        var d = new Date();
+        d.setTime(d.getTime() + exms);
+        var expires = "expires="+ d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+</script>
 <script>
     function openMenu(){
         $("#menu ul").toggleClass("open");

@@ -43,13 +43,41 @@
         <h1>Feedback</h1>
         
         <form action="https://dusterthefirst.ddns.net:32123" method="POST">
-            <input type="text" name="tag" placeholder="Discord Tag" required>
+            <input type="text" name="tag" placeholder="TAG#000" required disabled style="border: none; background: transparent">
             <input type="text" name="title" placeholder="Title" required>
             <br>
             <textarea type="text" name="content" placeholder="Your woes" required></textarea>
             <br>
-            <input type="submit" value="Send">
-            <input type="reset" value="Clear">
+            <input type="submit" name="submit" value="Send">
+            <input type="reset" name="reset" value="Clear">
         </form>
     </body>
+    <script>
+        let user = JSON.parse(getCookie('user'));
+        if (user) {
+            document.getElementsByName('tag')[0].value = user.username + "#" + user.discriminator;
+        } else {
+            document.getElementsByName('title')[0].disabled = true;
+            document.getElementsByName('content')[0].disabled = true;
+            document.getElementsByName('submit')[0].disabled = true;
+            document.getElementsByName('reset')[0].disabled = true;
+            document.getElementsByName('content')[0].value = "LOGIN TO SUBMIT FEEDBACK";
+        }
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for(var i = 0; i <ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return null;
+        }
+    </script>
 </html>
