@@ -11,12 +11,12 @@ h1 {
     font-size: 3em;
     margin: 0;
 }
-h1 .index {
+h1.index {
     background-attachment: fixed;
 	background-size: 100%;
     background-image: url("https://i1.sndcdn.com/avatars-000283354129-5s27v3-t500x500.jpg");
 }
-h1 .rules {
+h1.rules {
     background-image: url("https://i.ytimg.com/vi/cXdDxytmhJI/maxresdefault.jpg");
     background-attachment: fixed;
 	background-size: 100%;
