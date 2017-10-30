@@ -1,15 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:500');
 html, body{
+    font-family: 'Quicksand', sans-serif;
     margin: 0px 0px 10px 0px;
     text-rendering: optimizeLegibility;
 }
 
 h1 {
+    font-family: 'Pacifico', cursive;
     background-color: #23272A;
     text-align: center;
     color: #e5e6e6;
     padding: 40px;
     font-size: 3em;
     margin: 0;
+    text-shadow: 1px 1px #23272A;
 }
 h1.index {
     background-attachment: fixed;
