@@ -15,6 +15,13 @@ h1 {
     font-size: 3em;
     margin: 0;
     text-shadow: 1px 1px #23272A;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
 }
 h1.index {
     background-attachment: fixed;
