@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="/loadinstyle.css">
         <script>
             let querys = getJsonFromUrl();
             if (!querys.access_token || !querys.expires_in || !querys.scope || !querys.token_type) {
@@ -31,7 +32,7 @@
         </script>
     </head>
     <body>
-        <div style="margin: auto; width: 50%; border: none; padding: 10px;">
+        <div class="loggingin">
             <h1>Logging you in...<br>please wait.</h1>
         </div>
     </body>
