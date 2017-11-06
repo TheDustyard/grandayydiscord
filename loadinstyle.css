@@ -1,0 +1,26 @@
+html, body {
+    animation-name: fadeincolorload;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    background-color: #010423;
+    color: white;
+}
+.loggingin {
+    color: white;
+    margin: auto;
+    width: 50%;
+    border: none;
+    padding: 10px;
+}
+@keyframes fadeincolorload {
+0% {
+background-color: #010423;
+}
+50% {
+background-color: #010959;
+}
+100% {
+background-color: #010423;
+}
+}
