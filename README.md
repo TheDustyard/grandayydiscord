@@ -1,12 +1,14 @@
-# OPERATION THICC
+<img width="100px" draggable="false" src="favicon.png">
+# PROJECT THICC.
 
-### About
-In this new version we are working on making this website more interconnected with the guild itself
+### What are we doing?
+We are making this website more interconnected with the guild/server itself.
 
-### What we are adding
-- interfacing with [RobbieBotten](https://github.com/DusterTheFirst/RobbieBotten)
-- adding profiles and descriptions
-- just overall making the website do something
+### What we are adding:
+- Interfacing with [RobbieBotten](https://github.com/DusterTheFirst/RobbieBotten),
+- Adding profiles and descriptions,
+- Making the website mobile friendly & making it look hella good,
+- And adding functions so then the website can be used for more uses.
 
 ### whytho
 <sub>i am hella bored</sub>
