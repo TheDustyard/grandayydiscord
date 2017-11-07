@@ -1,4 +1,5 @@
 <img width="100px" draggable="false" src="favicon.png">
+
 # PROJECT THICC.
 
 ### What are we doing?
