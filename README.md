@@ -1,4 +1,4 @@
-<img width="100px" draggable="false" style="display: block;margin: 0 auto;"src="favicon.png">
+![favicon.png](favicon.png)
 
 <div style="text-align: center;">
 # PROJECT THICC.
