@@ -1,6 +1,7 @@
 ![favicon.png](favicon.png)
 
 <div style="text-align: center;">
+
 # PROJECT THICC.
 
 ### What are we doing?
