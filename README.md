@@ -1,5 +1,6 @@
-<img width="100px" draggable="false" src="favicon.png">
+<img width="100px" draggable="false" style="display: block;margin: 0 auto;"src="favicon.png">
 
+<div style="text-align: center;">
 # PROJECT THICC.
 
 ### What are we doing?
@@ -17,3 +18,4 @@ We are making this website more interconnected with the guild/server itself.
 ### Whomst is helping
  - [DusterTheFirst](https://github.com/DusterTheFirst) | backend and functionality of client
  - [TheFallingPie](https://github.com/TheFallingPie) | maintains the front end
+</div>
