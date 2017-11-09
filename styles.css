@@ -9,6 +9,7 @@ html, body{
 a {
     text-decoration: none;
 }
+
 h1 {
     font-family: 'Pacifico', cursive;
     background-color: #23272A;
@@ -27,16 +28,23 @@ h1 {
     cursor: default;
 }
 h1.index {
+	background-repeat: no-repeat;
     background-attachment: fixed;
 	background-size: 100%;
     background-image: url("https://i1.sndcdn.com/avatars-000283354129-5s27v3-t500x500.jpg");
 	background-position: center;
 }
 h1.rules {
+	background-repeat: no-repeat;
     background-image: url("https://i.ytimg.com/vi/cXdDxytmhJI/maxresdefault.jpg");
     background-attachment: fixed;
 	background-size: 100%;
 	background-position: center;
+}
+@media only screen and (max-width: 1368px) {
+h1 {
+    background-size: 250%;
+}
 }
 h2, h3, h4, h5, h6{
     text-align: center;
