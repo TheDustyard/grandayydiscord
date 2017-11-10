@@ -11,8 +11,7 @@
                 text-align: center;
                 padding: 10px;
                 margin-top: 10px;
-                display: inline-block;
-
+                display: none;
                 position: absolute;
                 left: 50%;
                 transform: translateX(-50%);
@@ -33,15 +32,30 @@
                 resize: none;
             }
             .ohhecc {
-            margin: auto;
             background-color: lightgrey;
             text-align: center;
+				z-index: 2;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: 0;
+				-webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                cursor: default;
             }
             .fancybutton {
             background-color: #474747;
             border: none;
             color: white;
             padding: 20px;
+			height: 20px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
@@ -59,6 +73,9 @@
             background-color: #161616;
             transition: background-color 0.2s ease;
             }
+			.forme {
+				z-index: 1;
+			}
         </style>
     </head>
     <body id="body">
@@ -68,8 +85,13 @@
         <script>$("#header").load('/header.html');</script>
         
         <h1>Feedback</h1>
-        
-        <form id="forme" action="https://dusterthefirst.ddns.net:32123" method="POST">
+                <div class="ohhecc">
+            <h1 style="font-size:200px">Oh hecc :/</h1>
+            <h2>You must login to submit dat feedback der.</h1>
+            <p><i>Btw if ya on mobile, contact a <a draggable="false" class="Villain" href="roles.html#Villian">Villain</a>, you criminal scum.</i></p> 
+            <a class="fancybutton" draggable="false" href="">Login</a>
+		</div>
+        <form class="forme" action="https://dusterthefirst.ddns.net:32123" method="POST">
             <input type="text" name="tag" placeholder="Jeff#8216" required readonly style="border: none; background: transparent">
             <input type="text" name="title" placeholder="Title" required>
             <br>
@@ -78,24 +100,18 @@
             <input type="submit" name="submit" value="Send">
             <input type="reset" name="reset" value="Clear">
         </form>
-        <div class="ohhecc">
-            <h1 style="font-size:200px">Oh hecc :/</h1>
-            <h2>You must login to submit dat feedback der.</h1>
-            <p><i>Btw if ya on mobile, contact a <a draggable="false" class="Villain" href="roles.html#Villian">Villain</a>, you criminal scum.</i></p> 
-            <a class="fancybutton" href="">Login</a>
     </body>
     <script>
         let user = JSON.parse(getCookie('user'));
         if (user) {
-            document.getElementsByClass('ohhecc')[0].display: none;
-            document.getElementsByID('forme')[0].display: inline-block;
+			document.getElementsByClassName('ohhecc')[0].style.display = 'none';
+            document.getElementsByClassName('forme')[0].style.display = 'inline-block';
             document.getElementsByName('tag')[0].value = 
                 user.username + "#" + user.discriminator;
         } else {
-            document.getElementsByID('forme')[0].display: none;
-            document.getElementsByClass('ohhecc')[0].display: inline-block;
+            document.getElementsByClassName('forme')[0].style.display = 'none';
+            document.getElementsByClassName('ohhecc')[0].style.display = 'inline-block';
         }
-
         function getCookie(cname) {
             var name = cname + "=";
             var decodedCookie = decodeURIComponent(document.cookie);
