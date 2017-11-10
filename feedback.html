@@ -32,6 +32,33 @@
                 width: 500px;
                 resize: none;
             }
+            .ohhecc {
+            margin: auto;
+            background-color: lightgrey;
+            text-align: center;
+            }
+            .fancybutton {
+            background-color: #474747;
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 22px;
+            margin: 4px 2px;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            }
+            .fancybutton:hover {
+            background-color: #333333;
+            transition: background-color 0.2s ease;
+            }
+            .fancybutton:active {
+            background-color: #161616;
+            transition: background-color 0.2s ease;
+            }
         </style>
     </head>
     <body id="body">
@@ -42,26 +69,31 @@
         
         <h1>Feedback</h1>
         
-        <form action="https://dusterthefirst.ddns.net:32123" method="POST">
-            <input type="text" name="tag" placeholder="TAG#000" required readonly style="border: none; background: transparent">
+        <form id="forme" action="https://dusterthefirst.ddns.net:32123" method="POST">
+            <input type="text" name="tag" placeholder="Jeff#8216" required readonly style="border: none; background: transparent">
             <input type="text" name="title" placeholder="Title" required>
             <br>
-            <textarea type="text" name="content" placeholder="Your woes" required></textarea>
+            <textarea type="text" name="content" placeholder="Suggestions or something like dat." required></textarea>
             <br>
             <input type="submit" name="submit" value="Send">
             <input type="reset" name="reset" value="Clear">
         </form>
+        <div class="ohhecc">
+            <h1 style="font-size:200px">Oh hecc :/</h1>
+            <h2>You must login to submit dat feedback der.</h1>
+            <p><i>Btw if ya on mobile, contact a <a draggable="false" class="Villain" href="roles.html#Villian">Villain</a>, you criminal scum.</i></p> 
+            <a class="fancybutton" href="">Login</a>
     </body>
     <script>
         let user = JSON.parse(getCookie('user'));
         if (user) {
-            document.getElementsByName('tag')[0].value = user.username + "#" + user.discriminator;
+            document.getElementsByClass('ohhecc')[0].display: none;
+            document.getElementsByID('forme')[0].display: inline-block;
+            document.getElementsByName('tag')[0].value = 
+                user.username + "#" + user.discriminator;
         } else {
-            document.getElementsByName('title')[0].disabled = true;
-            document.getElementsByName('content')[0].disabled = true;
-            document.getElementsByName('submit')[0].disabled = true;
-            document.getElementsByName('reset')[0].disabled = true;
-            document.getElementsByName('content')[0].value = "LOGIN TO SUBMIT FEEDBACK";
+            document.getElementsByID('forme')[0].display: none;
+            document.getElementsByClass('ohhecc')[0].display: inline-block;
         }
 
         function getCookie(cname) {
