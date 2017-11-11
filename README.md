@@ -1,6 +1,6 @@
-![favicon.png](favicon.png)
+![globals/favicon.png](globals/favicon.png)
 
-<div style="text-align: center;">
+<span style="text-align: center;">
 
 # PROJECT THICC.
 
@@ -19,4 +19,4 @@ We are making this website more interconnected with the guild/server itself.
 ### Whomst is helping
  - [DusterTheFirst](https://github.com/DusterTheFirst) | backend and functionality of client
  - [TheFallingPie](https://github.com/TheFallingPie) | maintains the front end
-</div>
+</span>
