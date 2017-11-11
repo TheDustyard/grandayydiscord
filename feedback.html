@@ -104,12 +104,14 @@
         let user = JSON.parse(getCookie('user'));
         if (user) {
 			document.getElementsByClassName('ohhecc')[0].style.display = 'none';
+		document.body.style.backgroundColor = "white";
             document.getElementsByClassName('forme')[0].style.display = 'inline-block';
             document.getElementsByName('tag')[0].value = 
                 user.username + "#" + user.discriminator;
         } else {
             document.getElementsByClassName('forme')[0].style.display = 'none';
             document.getElementsByClassName('ohhecc')[0].style.display = 'inline-block';
+            document.body.style.backgroundColor = "lightgrey";
         }
         function getCookie(cname) {
             var name = cname + "=";
