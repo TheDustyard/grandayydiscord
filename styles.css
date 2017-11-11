@@ -106,8 +106,12 @@ p {
     color: #cf9346;
 }
 
-.Net {
+.ContentCop {
     color: #3498DB;
+}
+
+.ContentInspector {
+    color: #ff0061;
 }
 
 .Stingy {
@@ -128,6 +132,10 @@ p {
 
 .First {
     color: #d7342a;
+}
+
+.BigBen {
+    color: #ffa000;
 }
 
 .LAMBSAUCEEEE {
