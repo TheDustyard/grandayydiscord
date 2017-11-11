@@ -1,10 +1,10 @@
 /**
  * get GET params from url
  */
-function getGetParams() {
+function getGetParamsFromHash() {
     var query = location.hash.substr(1);
     var result = {};
-    query.split("&").forEach(function(part) {
+    query.split("&").forEach((part) => {
         var item = part.split("=");
         result[item[0]] = decodeURIComponent(item[1]);
     });
