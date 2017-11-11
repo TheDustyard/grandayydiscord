@@ -1,0 +1,3 @@
+/// <reference path="./globals/util.js" />
+
+GETJSON(`https://dusterthefirst.ddns.net:8080/me?token_type=${getCookie('token_type')}&access_token=${getCookie('access_token')}`, console.log);

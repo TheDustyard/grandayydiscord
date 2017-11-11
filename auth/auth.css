@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:500');
+html, body {
+    font-family: 'Quicksand', sans-serif;
+    animation-name: fadeincolorload;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    background-color: #010423;
+    color: white;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+.loggingin {
+    padding: 17% 0;
+    border: none;
+    text-align: center;
+    font-size: 140%;
+}
+@keyframes fadeincolorload {
+    0% {
+        background-color: #010423;
+    }
+    50% {
+        background-color: #030c70;
+    }
+    100% {
+        background-color: #010423;
+    }
+}
