@@ -2,7 +2,6 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Grandayy's Discord Feedback</title>
         <link rel="stylesheet" href="/styles.css">
         <link rel="icon" href="/favicon.png">
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -110,6 +109,7 @@
         if (user) {
 			document.getElementsByClassName('ohhecc')[0].style.display = 'none';
 		document.body.style.backgroundColor = "white";
+		document.title = "Send us Feedback!"
             document.getElementsByClassName('forme')[0].style.display = 'inline-block';
             document.getElementsByName('tag')[0].value = 
                 user.username + "#" + user.discriminator;
@@ -117,6 +117,7 @@
             document.getElementsByClassName('forme')[0].style.display = 'none';
             document.getElementsByClassName('ohhecc')[0].style.display = 'inline-block';
             document.body.style.backgroundColor = "lightgrey";
+	    document.title = "You must signin :3"
         }
         function getCookie(cname) {
             var name = cname + "=";
