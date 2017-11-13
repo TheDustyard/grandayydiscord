@@ -1,7 +1,6 @@
 <div align="center">
-    <p>
-        <img src="globals/favicon.png"/>
-    </p>
+
+    ![favicon](globals/favicon.png")
 </div>
 
 # PROJECT THICC.
