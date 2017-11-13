@@ -1,12 +1,3 @@
-<style>
-body {
-    text-align: center;
-}
-img {
-    display: block;
-    margin: auto;
-}
-</style>
 ![favicon](globals/favicon.png)
 
 # PROJECT THICC.
