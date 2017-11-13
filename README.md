@@ -7,7 +7,7 @@ img {
     margin: auto;
 }
 </style>
-<img src="globals/favicon.png">
+![favicon](globals/favicon.png)
 
 # PROJECT THICC.
 
