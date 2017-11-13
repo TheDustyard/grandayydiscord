@@ -73,3 +73,40 @@ function GETJSON(theUrl, callback) {
     xmlHttp.open("GET", theUrl, true); 
     xmlHttp.send();
 }
+
+/**
+ * GET a url
+ * @param {string} theUrl URL to GET
+ * @param {(document: Document) => void} callback Callback to call
+ */
+function GETHTML(theUrl, callback) {
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = () =>  { 
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+            callback(new DOMParser().parseFromString(xmlHttp.responseText));
+    }
+    xmlHttp.open("GET", theUrl, true); 
+    xmlHttp.send();
+}
+
+/**
+ * GET a url
+ * @param {string} theUrl URL to GET
+ */
+function injectCSS(theUrl) {
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = () =>  { 
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+            let link = document.createElement('link');
+            link.setAttribute('rel', 'stylesheet');
+            link.setAttribute('href', theUrl);
+            document.head.appendChild(link);
+        }
+    }
+    xmlHttp.open("GET", theUrl, true); 
+    xmlHttp.send();
+}
+
+function addLicense() {
+    
+}
