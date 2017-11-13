@@ -6,6 +6,13 @@
         <link rel="stylesheet" href="/styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="google-site-verification" content="dcVmGE6qcyvB8MYRE8YF89ECRNjeAde6KNpDpAzTfjg" />  
+        <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script>
+             $(function() {
+$( ".card" ).draggable();
+});
+        </script>
         <style>
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -21,7 +28,9 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    cursor: default;
+    cursor: move;
+        resize: both;
+    overflow: auto;
 }
 
 .card:hover {
