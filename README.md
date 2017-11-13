@@ -1,4 +1,4 @@
-<div align="center">
+<div float="right">
     <img src="globals/favicon.png"/>
 </div>
 
