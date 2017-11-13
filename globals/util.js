@@ -107,6 +107,12 @@ function injectCSS(theUrl) {
     xmlHttp.send();
 }
 
+/**
+ * Add the license to the current page
+ */
 function addLicense() {
-    
+    GET('/LICENSE', (data) => {
+        let comment = document.createComment(`\n${data}\n`);
+        document.head.parentElement.prepend(comment);
+    })
 }
