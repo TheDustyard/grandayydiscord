@@ -8,15 +8,10 @@
         <meta name="google-site-verification" content="dcVmGE6qcyvB8MYRE8YF89ECRNjeAde6KNpDpAzTfjg" />  
         <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-        <script>
-             $(function() {
-$( ".card" ).draggable();
-});
-        </script>
         <style>
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.2s ease;
+    transition: 0.1s ease;
     width: 90%;
     border-radius: 5px;
     margin-top: 30px;
@@ -30,6 +25,7 @@ $( ".card" ).draggable();
     cursor: move;
         resize: both;
     overflow: auto;
+    margin: auto;
 }
 
 .card:hover {
@@ -42,6 +38,11 @@ $( ".card" ).draggable();
 </style>
     </head>
     <body>
+        <script>
+        $(function() {
+$( ".card" ).draggable();
+});
+        </script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <div id="header"></div>
         <div id="headerspacer" class="desktop">&nbsp;</div>
