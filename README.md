@@ -1,6 +1,4 @@
-<div float="right">
-    <img src="globals/favicon.png"/>
-</div>
+<img src="globals/favicon.png" align="right"/>
 
 # PROJECT THICC.
 
