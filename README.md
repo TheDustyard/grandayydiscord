@@ -1,6 +1,13 @@
-![globals/favicon.png](globals/favicon.png)
-
-<span style="text-align: center;">
+<style>
+body {
+    text-align: center;
+}
+img {
+    display: block;
+    margin: auto;
+}
+</style>
+<img src="globals/favicon.png">
 
 # PROJECT THICC.
 
@@ -13,10 +20,10 @@ We are making this website more interconnected with the guild/server itself.
 - Making the website mobile friendly & making it look hella good,
 - And adding functions so then the website can be used for more uses.
 
-### whytho
-<sub>i am hella bored</sub>
+### Why though?
+Because the current is old looking and not mobile friendly.
+<span style="text-decoration: line-through;"><sub>also we am hella bored</sub></span>
 
-### Whomst is helping
+### Whomst is helping: 
  - [DusterTheFirst](https://github.com/DusterTheFirst) | backend and functionality of client
  - [TheFallingPie](https://github.com/TheFallingPie) | maintains the front end
-</span>
