@@ -88,6 +88,10 @@
         <script>$("#header").load('/header.html');</script>
         
         <h1>Feedback</h1>
+	    <div class="alert">
+        <span class="closebtn">&times;</span>  
+        This website is startin to get out of date. We will soon change this website to a nicer one. <a class="a" draggable="false" href="https://github.com/grandayy/grandayy.github.io/tree/dev">Click here</a> to see the current progress.
+        </div>
                 <div class="ohhecc">
             <h2 style="font-size:70px;">Oh hecc :/</h2>
             <h2>You must login to submit dat feedback der.</h1>
@@ -105,6 +109,15 @@
         </form>
     </body>
     <script>
+	    var close = document.getElementsByClassName("closebtn");
+var i;
+for (i = 0; i < close.length; i++) {
+    close[i].onclick = function(){
+        var div = this.parentElement;
+        div.style.opacity = "0";
+        setTimeout(function(){ div.style.display = "none"; }, 600);
+    }
+}
         let user = JSON.parse(getCookie('user'));
         if (user) {
 			document.getElementsByClassName('ohhecc')[0].style.display = 'none';
