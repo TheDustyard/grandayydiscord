@@ -6,7 +6,7 @@ html, body{
     text-rendering: optimizeLegibility;
 }
 .alert {
-    top: 50px;
+    top: 47px;
     padding: 20px;
     background-color: #f44336;
     color: white;
