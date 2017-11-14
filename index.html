@@ -45,12 +45,17 @@
         <link rel="stylesheet" href="styles.css">
 
         <h1 class="index">Grandayy's Discord Server</h1>
+        <div class="alert">
+        <span class="closebtn">&times;</span>  
+        This website is startin to get out of date. We will soon change this website to a nicer one. <a class="a" draggable="false" href="https://github.com/grandayy/grandayy.github.io/tree/dev">Click here</a> to see the current progress.
+        </div>
         <div class="card">
   <div class="container">
     <h2 align="left" style="font-size:40px;">Woah.</h2> 
     <p align="left" style="margin-top:-20px;">This website is getting old, amirite?<br>Well It's time for an upgrade!<br>Over the next couple of weeks we are upgrading this website. You won't see any changes though until we are done.<br><a draggable="false" href="https://github.com/grandayy/grandayy.github.io/tree/dev">Click Here</a> to see the progress.<br>We will also post new info here about it.</p> 
   </div>
 </div>
+        <br>
         <center>
             <img src="https://discordapp.com/api/guilds/306061550693777409/embed.png?style=shield">
             <img src="https://discordapp.com/api/guilds/306061550693777409/embed.png?style=banner2">
@@ -58,6 +63,16 @@
             <img src="https://discordapp.com/api/guilds/306061550693777409/embed.png?style=banner1">
             <img src="https://discordapp.com/api/guilds/306061550693777409/embed.png?style=banner4">
         </center>
-
+<script>
+            var close = document.getElementsByClassName("closebtn");
+var i;
+for (i = 0; i < close.length; i++) {
+    close[i].onclick = function(){
+        var div = this.parentElement;
+        div.style.opacity = "0";
+        setTimeout(function(){ div.style.display = "none"; }, 600);
+    }
+}
+        </script>
     </body>
 </html>
