@@ -53,7 +53,22 @@
         <script>$("#header").load('/header.html');</script>
         
         <h1>Roles</h1>
-        
+                <script>
+            var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+    close[i].onclick = function(){
+        var div = this.parentElement;
+        div.style.opacity = "0";
+        setTimeout(function(){ div.style.display = "none"; }, 600);
+    }
+}
+        </script>
+        <div class="alert">
+        <span class="closebtn">&times;</span>  
+        This website is startin to get out of date. We will soon change this website to a nicer one. <a class="a" draggable="false" href="https://github.com/grandayy/grandayy.github.io/tree/dev">Click here</a> to see the current progress.
+        </div>
         <div class="roles">
             <h2>Ranks</h2>
             <div class="BigBen" id="BigBen"><a href="#BigBen">Big Ben</a> - 60 on mee6</div>
