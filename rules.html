@@ -6,52 +6,9 @@
         <link rel="stylesheet" href="/styles.css">
         <link rel="icon" href="/favicon.png">
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="/alert.js"></script>
     </head>
     <body>
-        <style>
-.alert {
-    top: 50px;
-    padding: 20px;
-    background-color: #f44336;
-    color: white;
-    opacity: 1;
-    transition: opacity 0.6s;
-    position: sticky;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    cursor: default;
-}
-.closebtn {
-    margin-left: 15px;
-    color: white;
-    font-weight: bold;
-    float: right;
-    font-size: 22px;
-    line-height: 20px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.a {
-    color: #7fb6ff;
-    transition: 0.3s;
-}
-.a:hover {
-    color: #63a6ff;
-}
-.a:active {
-    color: #4d97f9;
-}
-.closebtn:hover {
-    color: #eaeaea;
-}
-.closebtn:active {
-    color: #e5e5e5;
-}
-</style>
         <div id="header"></div>
         <div id="headerspacer" class="desktop">&nbsp;</div>
         <div id="headerspacer" class="mobile">&nbsp;</div>
@@ -125,17 +82,5 @@
             <a draggable="false" href="https://discordapp.com/guidelines">So do the guidelines.</a><br>
             <a draggable="false" href="/roles.html">Information on roles.</a>
         </p>
-        <script>
-var close = document.getElementsByClassName("closebtn");
-var i;
-
-for (i = 0; i < close.length; i++) {
-    close[i].onclick = function(){
-        var div = this.parentElement;
-        div.style.opacity = "0";
-        setTimeout(function(){ div.style.display = "none"; }, 600);
-    }
-}
-</script>
     </body>
 </html> 
