@@ -16,20 +16,12 @@ iframe.content {
     display: block;
 }
 
-.headerspacer {
-    display: block;
-    height: 40px;
-    width: 100%;
-    background-color: red;
-}
 .nav {
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: 40px;
     background-color: green;
-    /* opacity: .5; */
 }
 /* TABLET */
 @media only screen and (min-width: 600px) {

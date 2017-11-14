@@ -1,4 +1,4 @@
-![favicon](globals/favicon.png)
+<img src="globals/favicon.png" align="right"/>
 
 # PROJECT THICC.
 
