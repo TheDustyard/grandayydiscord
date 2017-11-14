@@ -16,7 +16,15 @@
     color: white;
     opacity: 1;
     transition: opacity 0.6s;
-    position: fixed;
+    position: sticky;
+    width: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
 }
 .closebtn {
     margin-left: 15px;
@@ -45,14 +53,14 @@
     color: #e5e5e5;
 }
 </style>
+        <div class="alert">
+        <span class="closebtn">&times;</span>  
+        This website is startin to get out of date. We will soon change this website to a nicer one. <a class="a" draggable="false" href="https://github.com/grandayy/grandayy.github.io/tree/dev">Click here</a> to see the current progress.
+        </div>
         <div id="header"></div>
         <div id="headerspacer" class="desktop">&nbsp;</div>
         <div id="headerspacer" class="mobile">&nbsp;</div>
         <script>$("#header").load('/header.html');</script>
-        <div class="alert">
-        <span class="closebtn">&times;</span>  
-        This website is startin to get out of date. We will soon change this website to a nicer one. <a draggable="false" href="https://github.com/grandayy/grandayy.github.io/tree/dev">Click here</a> to see the current progress.
-        </div>
         <h1 class="rules">Server Rules</h1>
         
         <ol class="rules">
