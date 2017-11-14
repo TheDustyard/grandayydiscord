@@ -53,18 +53,6 @@
         <script>$("#header").load('/header.html');</script>
         
         <h1>Roles</h1>
-                <script>
-            var close = document.getElementsByClassName("closebtn");
-var i;
-
-for (i = 0; i < close.length; i++) {
-    close[i].onclick = function(){
-        var div = this.parentElement;
-        div.style.opacity = "0";
-        setTimeout(function(){ div.style.display = "none"; }, 600);
-    }
-}
-        </script>
         <div class="alert">
         <span class="closebtn">&times;</span>  
         This website is startin to get out of date. We will soon change this website to a nicer one. <a class="a" draggable="false" href="https://github.com/grandayy/grandayy.github.io/tree/dev">Click here</a> to see the current progress.
@@ -105,6 +93,16 @@ for (i = 0; i < close.length; i++) {
         </p>
     </body>
     <script>
+            var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+    close[i].onclick = function(){
+        var div = this.parentElement;
+        div.style.opacity = "0";
+        setTimeout(function(){ div.style.display = "none"; }, 600);
+    }
+}
         function ree() {
             var elems = document.body.getElementsByTagName("*");
             for (elem of elems) {
