@@ -1,0 +1,41 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+iframe {
+    border: none;
+}
+
+iframe.content {
+    width: 100%;
+    height: calc(100% - 40px);
+    display: block;
+}
+
+.headerspacer {
+    display: block;
+    height: 40px;
+    width: 100%;
+    background-color: red;
+}
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: green;
+    /* opacity: .5; */
+}
+/* TABLET */
+@media only screen and (min-width: 600px) {
+
+}
+/* PHONE */
+@media only screen and (max-width: 768px){
+    
+}
