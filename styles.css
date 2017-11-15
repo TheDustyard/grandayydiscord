@@ -4,6 +4,7 @@ html, body{
     font-family: 'Quicksand', sans-serif;
     margin: 0px 0px 10px 0px;
     text-rendering: optimizeLegibility;
+    transition: 0.2s ease;
 }
 .alert {
     top: 47px;
