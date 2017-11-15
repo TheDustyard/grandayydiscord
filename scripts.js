@@ -5,3 +5,11 @@ if (getCookie('access_token')) {
 } else {
     console.log('logged out');
 }
+
+window.onload = () => {
+    let elem = document.createElement('base');
+    elem.target = "_parent";
+    for (let frame of document.querySelectorAll('iframe')) {
+        frame.contentWindow.document.body.appendChild(elem);
+    }
+}

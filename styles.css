@@ -16,13 +16,30 @@ iframe.content {
     display: block;
 }
 
-.nav {
+header {
     top: 0;
     left: 0;
     right: 0;
-    height: 40px;
     background-color: green;
 }
+
+header a {
+    display: inline-block;
+    background-color: red;
+    color: yellow;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+header a:hover {
+    color: black;
+}
+
+header a.current {
+
+}
+
 /* TABLET */
 @media only screen and (min-width: 600px) {
 
