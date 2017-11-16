@@ -34,30 +34,45 @@
     </head>
     <body>
         <header>
-            <left>
-                <a href="#/@me">Home</a>
-                <a href="#/search">Search</a>
-                <staff>
-                    <a href="#/bans">Bans</a>
-                    <a href="#/warns">Warns</a>
-                    <a href="#/warns">Audit Log</a>
-                </staff>
-            </left>
-            <right>
-                <loggedin>
-                    <img class="currentuserpfp" src="https://discordapp.com/assets/dd4dbc0016779df1378e7812eabaa04d.png" height="40" style="vertical-align: middle; border-radius: 10px;">
-                    <a href="#/@me">Profile</a>
-                    <a href="#/@me">Settings</a>
-                    <a href="#/@me">Logout</a>
-                </loggedin>
-                <loggedout>
-                    <a href="#/@me">Login</a>                        
-                </loggedout>
-
-            </right>
+            <div class="nav">
+                <div class="left">
+                    <a href="/#"><img src="/globals/favicon.png" height="40" style="vertical-align: middle; border-radius: 10px;"></a>
+                    <input type="text" placeholder="Search">
+                    <div class="staff hide">
+                        <a href="#/bans">Bans</a>
+                        <a href="#/warns">Warns</a>
+                        <a href="#/warns">Audit Log</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="loggedin">
+                        <div class="opendropdown" dropdown="#profiledropdown">
+                            <img class="pfp currentuserpfp" src="https://discordapp.com/assets/dd4dbc0016779df1378e7812eabaa04d.png" height="20">
+                            <span class="down-caret"></span>
+                            <div id="profiledropdown" class="dropdown">
+                                <div class="signedinas">Signed in as</div>
+                                <div class="username"></div>
+                                <hr>
+                                <a href="#/@me">Profile</a>
+                                <hr>
+                                <a href="#/help">Help</a>
+                                <a href="#/@me/settings">Settings</a>
+                                <a href="/auth/#logout">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="loggedout">
+                        <a href="https://discordapp.com/oauth2/authorize?response_type=token&client_id=307231810218360832&scope=identify&redirect_uri=http://127.0.0.1:5500/auth/">Login</a>                        
+                    </div>
+    
+                </div>
+            </div>
         </header>
-        <iframe src="/pages/main.html" class="content">
+        <!-- <iframe src="/pages/main.html" class="content">
 
-        </iframe>
+        </iframe> -->
+        <div class="content">
+            a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>
+        </div>
     </body>
 </html>

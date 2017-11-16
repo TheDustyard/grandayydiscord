@@ -1,9 +1,16 @@
 html, body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
     height: 100%;
     width: 100%;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
 }
 
 iframe {
@@ -12,7 +19,7 @@ iframe {
 
 iframe.content {
     width: 100%;
-    height: calc(100% - 40px);
+    height: calc(100% - 50px);
     display: block;
 }
 
@@ -21,8 +28,18 @@ header {
     left: 0;
     right: 0;
     background-color: green;
+    height: 50px;
+    line-height: 50px;
+    padding: 5px 0px;
 }
 
+.nav {
+    max-width: 1000px;
+    height: 100%;
+    margin: 0px auto;
+}
+
+/*
 header a {
     display: inline-block;
     background-color: red;
@@ -38,6 +55,67 @@ header a:hover {
 
 header a.current {
 
+} */
+
+.pfp {
+    vertical-align: middle;
+    border-radius: 5px;
+}
+.opendropdown {
+    cursor: default;
+    display: inline;
+}
+
+.down-caret {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #ffffff transparent transparent transparent;
+    display: inline-block;
+    margin-left: 3px;
+    top: -3px;
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 60px;
+    transform: translateX(-10px);
+    line-height: 1em;
+    background: white;
+    border: 2px solid black;
+}
+.dropdown.show {
+    display: block;
+}
+.dropdown a {
+    display: block;
+    padding: 2px;
+    text-decoration: none;
+    color: black;
+}
+.dropdown hr {
+    border: 1px solid black;
+}
+
+.staff {
+    display: inline-block;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+.loggedin {
+    display: none;
+}
+.loggedout {
+    display: block;
 }
 
 /* TABLET */
@@ -45,6 +123,6 @@ header a.current {
 
 }
 /* PHONE */
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
     
 }
