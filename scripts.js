@@ -3,15 +3,18 @@
 window.onload = window.onhashchange = () => {
     console.log('loading');
 
-    let loggedin = document.getElementsByClassName('loggedin');
-    let loggedout = document.getElementsByClassName('loggedout');
+    let loggedin = document.querySelectorAll('.loggedin');
+    let loggedout = document.querySelectorAll('.loggedout');
 
     if (getCookie('access_token')) {
         GETJSON(`https://dusterthefirst.ddns.net:8080/me?token_type=${getCookie('token_type')}&access_token=${getCookie('access_token')}`, (data) => {
             console.log(data);
 
-            Array.from(document.getElementsByClassName('username')).forEach((x) => {
-                x.innerHTML = data.tag;
+            Array.from(document.querySelectorAll('.currentuser.username')).forEach((x) => {
+                x.innerHTML = data.username;
+            });
+            Array.from(document.querySelectorAll('.currentuser.discriminator')).forEach((x) => {
+                x.innerHTML = data.discriminator;
             });
 
             Array.from(document.querySelectorAll('img.currentuserpfp')).forEach((x) => {

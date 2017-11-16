@@ -37,8 +37,12 @@
             <div class="nav">
                 <div class="left">
                     <a href="/#"><img src="/globals/favicon.png" height="40" style="vertical-align: middle; border-radius: 10px;"></a>
-                    <input type="text" placeholder="Search">
+                    <input type="text" placeholder="Search" class="searchbar">
+                    <a href="#/rules">Rules</a>
+                    <a href="#/roles">Roles</a>
+                    <a href="#/feedback">Feedback</a>
                     <div class="staff hide">
+                        <a href="#/rules/staff">Bans</a>
                         <a href="#/bans">Bans</a>
                         <a href="#/warns">Warns</a>
                         <a href="#/warns">Audit Log</a>
@@ -47,11 +51,11 @@
                 <div class="right">
                     <div class="loggedin">
                         <div class="opendropdown" dropdown="#profiledropdown">
-                            <img class="pfp currentuserpfp" src="https://discordapp.com/assets/dd4dbc0016779df1378e7812eabaa04d.png" height="20">
+                            <img class="pfp currentuserpfp" src="https://discordapp.com/assets/dd4dbc0016779df1378e7812eabaa04d.png" height="30">
                             <span class="down-caret"></span>
                             <div id="profiledropdown" class="dropdown">
                                 <div class="signedinas">Signed in as</div>
-                                <div class="username"></div>
+                                <div class="user"><span class="currentuser username"></span><span class="discsmall">#<span class="currentuser discriminator"></span></span></div>
                                 <hr>
                                 <a href="#/@me">Profile</a>
                                 <hr>
