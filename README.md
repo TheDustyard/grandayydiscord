@@ -18,3 +18,19 @@ Because the current is old looking and not mobile friendly.
 ### Whomst is helping: 
  - [DusterTheFirst](https://github.com/DusterTheFirst) | backend and functionality of client
  - [TheFallingPie](https://github.com/TheFallingPie) | maintains the front end
+ 
+ # Progress
+ ### 17/11/17
+ We have started to create mockups for the following;
+- Profile,
+- Warnings,
+- Mainpage.
+
+#### What are we doing today?
+These are not mobile friendly yet. Today [TheFallingPie](https://github.com/TheFallingPie) will be making the profile and warnings mockup mobile friendly.
+
+#### Conclusion
+Screenshots of the Profile and warnings mockup will be uploaded later once the mobile version is finished. They will also be uploaded to another github which we shall reveal soon.
+ETA of the complete website is yet to be estimated.
+We know we are apart of a big brand here (if ya wanna call it that), so we are trying our best to achieve the goals which we have setted above. This can take from weeks to years.
+Thank you for following the god damn train CJ.
