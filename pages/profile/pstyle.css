@@ -12,6 +12,9 @@ font-family: 'Quicksand', sans-serif;
 margin: 0px 0px 0px 0px;
 transition: 0.2s ease;
 }
+.yep {
+  display: none;
+}
 .headingstuff {
 font-family: 'Pacifico', cursive;
 background-attachment: fixed;
@@ -73,13 +76,12 @@ border-color: #b7b7b7;
 .fa {
 padding: 10px;
 font-size: 23px;
-width: 23px;
+width: 18px;
 text-align: center;
 text-decoration: none;
-margin: 2.5px;
+margin-left: 10px;
 border-radius: 50%;
 }
-
 
 .fa-facebook {
 background: #3B5998;
@@ -261,4 +263,44 @@ margin-top:5px;
 }
 .hrroles {
 border-width: 0.4px;
+}
+@media only screen and (max-width: 460px) {
+  .headingstuff h1 {
+    display: none;
+  }
+  .circle {
+  margin-left: 260px;
+}
+  .headingstuff {
+    animation: none;
+    background-size: 300%;
+  }
+  .roles {
+    margin:auto;
+    position: inherit;
+    margin-top: 10px;
+  }
+  .yep {
+    text-align: center;
+    color:#777777;
+    font-family: 'Pacifico', cursive;
+    margin-top:0px;
+    margin-bottom:-20px;
+    display: block;
+  }
+  .aha {
+    margin: auto;
+    display: block;
+    z-index: 3;
+    margin-top: -170px;
+  }
+  .profile {
+    height: 510px;
+    margin: auto;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    box-shadow: none;
+    margin-top: -110px;
+    z-index: 1;
+}
 }
