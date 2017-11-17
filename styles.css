@@ -182,11 +182,39 @@ a.loginbutton:hover {
     display: block;
 }
 
-/* TABLET */
-@media only screen and (min-width: 600px) {
-
+.mobile {
+    display: none;
 }
+
 /* PHONE */
 @media only screen and (max-width: 768px) {
-    
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .left {
+        position: relative;
+        height: 100%;
+    }
+    .openmenu {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0px 10px;
+    }
+    .right {
+        width: calc(100% - 50px);
+        margin-right: 10px;
+    }
+    .searchbar {
+        width: calc(100% - 20px);
+    }
+    .openmenu div {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 6px 0;
+    }
 }
