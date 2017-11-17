@@ -62,6 +62,48 @@ window.onload = () => {
         });
     }
 
+    let menu;
+    let openmenus = Array.from(document.getElementsByClassName('openmenu')).filter((x, i, a) => a.indexOf(x) == i);
+    for (let menuopener of openmenus) {
+        menu = document.querySelector(menuopener.getAttribute('menu'))
+        menuopener.addEventListener('click', (e) => {
+            if (showing(menu))
+                hide(menu);
+            else
+                show(menu);
+            e.stopPropagation();
+        });
+        menu.addEventListener('click', (e) => {
+            show(menu);
+            e.stopPropagation();
+        });
+        window.addEventListener('click', () => {
+            hide(menu);
+        });
+    }
+
+    //MAKE INTO FUNCTIOn
+
+    let parenthider;
+    let parenthiders = Array.from(document.getElementsByClassName('hideparent')).filter((x, i, a) => a.indexOf(x) == i);
+    for (let parenthidere of parenthiders) {
+        menu = document.querySelector(menuopener.getAttribute('menu'))
+        menuopener.addEventListener('click', (e) => {
+            if (showing(menu))
+                hide(menu);
+            else
+                show(menu);
+            e.stopPropagation();
+        });
+        menu.addEventListener('click', (e) => {
+            show(menu);
+            e.stopPropagation();
+        });
+        window.addEventListener('click', () => {
+            hide(menu);
+        });
+    }
+
     let searchbars = document.querySelectorAll('.searchbar');
     for (let searchbar of searchbars) {
         searchbar.addEventListener('keyup', (e) => {
