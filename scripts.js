@@ -80,3 +80,12 @@ window.onload = () => {
 
     console.log('loaded all synchronaoussss')
 }
+
+window.onhashchange = () => {
+    let dropdown;
+    let dropdowns = Array.from(document.getElementsByClassName('opendropdown')).filter((x, i, a) => a.indexOf(x) == i);
+    for (let dropdownopener of dropdowns) {
+        dropdown = document.querySelector(dropdownopener.getAttribute('dropdown'))        
+        hide(dropdown);
+    }
+}

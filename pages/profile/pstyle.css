@@ -1,306 +1,351 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300');
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
-html, body {
--webkit-touch-callout: none;
--webkit-user-select: none;
--khtml-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
-cursor: default;
-font-family: 'Quicksand', sans-serif;
-margin: 0px 0px 0px 0px;
-transition: 0.2s ease;
+html,
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px 0px 0px 0px;
+    transition: 0.2s ease;
 }
+
 .yep {
-  display: none;
+    display: none;
 }
+
 .headingstuff {
-font-family: 'Pacifico', cursive;
-background-attachment: fixed;
-background-size: 100%;
-height: 230px;
-background-image: url("https://cdn.discordapp.com/attachments/290708486516637696/364267633702469632/Screenshot_1.png");
-text-align: left;
-color: white;
-padding: 20px;
-font-size: 3em;
-margin: 0;
-text-shadow: 1px 1px black;
-animation: startup 5s ease-in-out;
-transition: 3s ease-in-out;
+    font-family: 'Pacifico', cursive;
+    background-attachment: fixed;
+    background-size: 100%;
+    height: 230px;
+    background-image: url("https://cdn.discordapp.com/attachments/290708486516637696/364267633702469632/Screenshot_1.png");
+    text-align: left;
+    color: white;
+    padding: 20px;
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 1px 1px black;
+    animation: startup 5s ease-in-out;
+    transition: 3s ease-in-out;
 }
+
 .aha {
-border-radius: 100%;
-border: 10px #f4f4f4 solid;
-z-index:1;
-margin-left: 20px;
-margin-top: -150px;
-pointer-events: none;
+    border-radius: 100%;
+    border: 10px #f4f4f4 solid;
+    z-index: 1;
+    margin-left: 20px;
+    margin-top: -150px;
+    pointer-events: none;
 }
+
 .headingstuff:hover {
-background-size: 105%;
+    background-size: 105%;
 }
-.aha:hover ~ .headingstuff {
-background-size: 105%;
+
+.aha:hover~.headingstuff {
+    background-size: 105%;
 }
+
 @keyframes startup {
-0% { background-size: 140%;}
-100% { background-size: 100%;}
+    0% {
+        background-size: 140%;
+    }
+    100% {
+        background-size: 100%;
+    }
 }
+
 .circle {
-position: absolute;
-height: 40px;
-width: 40px;
-border-radius: 50%;
-background-color: lightgray;
-z-index: 2;
-margin-left: 180px;
-margin-top: -60px;
-border: 5px #f4f4f4 solid;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: lightgray;
+    z-index: 2;
+    margin-left: 180px;
+    margin-top: -60px;
+    border: 5px #f4f4f4 solid;
 }
+
 .headingstuff h1 {
-margin-left: 250px;
+    margin-left: 250px;
 }
+
 hr {
-display: block;
-width: 80%;
-margin-top: -13px;
-margin-bottom: -13px;
-margin-left: auto;
-margin-right: auto;
-border-style: solid;
-border-width: 0.4px;
-border-color: #b7b7b7;
+    display: block;
+    width: 80%;
+    margin-top: -13px;
+    margin-bottom: -13px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 0.4px;
+    border-color: #b7b7b7;
 }
+
 .fa {
-padding: 10px;
-font-size: 23px;
-width: 18px;
-text-align: center;
-text-decoration: none;
-margin-left: 10px;
-border-radius: 50%;
+    padding: 10px;
+    font-size: 23px;
+    width: 18px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 10px;
+    border-radius: 50%;
 }
 
 .fa-facebook {
-background: #3B5998;
-color: white;
+    background: #3B5998;
+    color: white;
 }
 
 .fa-twitter {
-background: grey;
-color: white;
-transition: 0.15s ease;
+    background: grey;
+    color: white;
+    transition: 0.15s ease;
 }
 
 .fa-twitter:hover {
-background: #55ACEE;
-transition: 0.2s ease;
+    background: #55ACEE;
+    transition: 0.2s ease;
 }
 
 .fa-youtube {
-background: grey;
-color: white;
-transition: 0.15s ease;
+    background: grey;
+    color: white;
+    transition: 0.15s ease;
 }
 
 .fa-youtube:hover {
-background: #bb0000;
-color: white;
-transition: 0.2s ease;
+    background: #bb0000;
+    color: white;
+    transition: 0.2s ease;
 }
 
 .fa-instagram {
-background: grey;
-color: white;
-transition: 0.15s ease;
+    background: grey;
+    color: white;
+    transition: 0.15s ease;
 }
 
 .fa-instagram:hover {
-background: #125688;
-color: white;
-transition: 0.2s ease;
+    background: #125688;
+    color: white;
+    transition: 0.2s ease;
 }
+
 .up {
-margin-top:-25px;
+    margin-top: -25px;
 }
+
 .fa-snapchat-ghost {
-background: grey;
-color: white;
-transition: 0.15s ease;
+    background: grey;
+    color: white;
+    transition: 0.15s ease;
 }
 
 .fa-snapchat-ghost:hover {
-background: #fffc00;
-color: white;
-text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-transition: 0.2s ease;
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    transition: 0.2s ease;
 }
+
 .mod {
-color: black;
-transition: 0.15s ease;
+    color: black;
+    transition: 0.15s ease;
 }
+
 .mod:hover {
-color: #5a9bec;
-transition: 0.2s ease;
+    color: #5a9bec;
+    transition: 0.2s ease;
 }
+
 .vsauce {
-color: black;
-transition: 0.15s ease;
+    color: black;
+    transition: 0.15s ease;
 }
+
 .roleup {
-margin-top: -20px;
+    margin-top: -20px;
 }
+
 .ban {
-background-color: red;
-transition: 0.2s ease;
-cursor: pointer;
-text-align:center;
-width:95%;
-margin-left:5px;
-border-radius:5px;
-margin-top:-15px;
-color:white;
-}
-.ban:hover {
-transition: 0.3s ease;
-box-shadow: inset 0 0 20px #8a2121;
-}
-.ban:active {
-transition: 0.4s ease;
-background-color: #980000;
-box-shadow: inset 0 0 24px #3c0000;
-}
-.vsauce:hover {
-color: #8efa06;
-transition: 0.2s ease;
-}
-.jake {
-color: black;
-transition: 0.15s ease;
-}
-.jake:hover {
-color: #cece16;
-transition: 0.2s ease;
-}
-.pirate {
-color: black;
-transition: 0.15s ease;
-}
-.pirate:hover {
-color: #ffb22a;
-transition: 0.2s ease;
-}
-.enlisted {
-color: black;
-transition: 0.15s ease;
-}
-.enlisted:hover {
-color: #9b59b6;
-transition: 0.2s ease;
-}
-.mwchamp {
-color: black;
-transition: 0.15s ease;
-}
-.mwchamp:hover {
-color: #11806a;
-transition: 0.2s ease;
-}
-.allstar {
-color: black;
-transition: 0.15s ease;
-}
-.allstar:hover {
-color: #7d0061;
-transition: 0.2s ease;
-}
-a {
-cursor: pointer;
-text-decoration: none;
-}
-.profile {
-margin-left:20px;
-margin-top:-110px;
-width:220px;
-background-color:#f4f4f4;
-height:485px;
-box-shadow: 0 0 3px #bdbdbd;
-border-radius:8px;
-}
-.boxmod {
-text-align:center;
-width:95%;
-margin-left:5px;
-border-radius:5px;
-color:white;
-background-color:#5a9bec;
-}
-.hrf {
-border-width:0.5px;
-}
-.infohead {
-margin-left:20px;
-color:#777777;
-}
-.info {
-margin-left:20px;
-margin-top:-25px;
-}
-.roles {
-text-align:center;
-right:0;
-background-color:#f4f4f4;
-position:absolute;
-margin-top:-370px;
-width:220px;
-box-shadow: 0 0 3px #bdbdbd;
-border-radius:8px;
-}
-.roleshead {
-margin-top:5px;
-}
-.hrroles {
-border-width: 0.4px;
-}
-@media only screen and (max-width: 460px) {
-  .headingstuff h1 {
-    display: none;
-  }
-  .circle {
-  margin-left: 260px;
-}
-  .headingstuff {
-    animation: none;
-    background-size: 300%;
-  }
-  .roles {
-    margin:auto;
-    position: inherit;
-    margin-top: 10px;
-  }
-  .yep {
+    background-color: red;
+    transition: 0.2s ease;
+    cursor: pointer;
     text-align: center;
-    color:#777777;
-    font-family: 'Pacifico', cursive;
-    margin-top:0px;
-    margin-bottom:-20px;
-    display: block;
-  }
-  .aha {
-    margin: auto;
-    display: block;
-    z-index: 3;
-    margin-top: -170px;
-  }
-  .profile {
-    height: 510px;
-    margin: auto;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    box-shadow: none;
-    margin-top: -110px;
-    z-index: 1;
+    width: 95%;
+    margin-left: 5px;
+    border-radius: 5px;
+    margin-top: -15px;
+    color: white;
 }
+
+.ban:hover {
+    transition: 0.3s ease;
+    box-shadow: inset 0 0 20px #8a2121;
+}
+
+.ban:active {
+    transition: 0.4s ease;
+    background-color: #980000;
+    box-shadow: inset 0 0 24px #3c0000;
+}
+
+.vsauce:hover {
+    color: #8efa06;
+    transition: 0.2s ease;
+}
+
+.jake {
+    color: black;
+    transition: 0.15s ease;
+}
+
+.jake:hover {
+    color: #cece16;
+    transition: 0.2s ease;
+}
+
+.pirate {
+    color: black;
+    transition: 0.15s ease;
+}
+
+.pirate:hover {
+    color: #ffb22a;
+    transition: 0.2s ease;
+}
+
+.enlisted {
+    color: black;
+    transition: 0.15s ease;
+}
+
+.enlisted:hover {
+    color: #9b59b6;
+    transition: 0.2s ease;
+}
+
+.mwchamp {
+    color: black;
+    transition: 0.15s ease;
+}
+
+.mwchamp:hover {
+    color: #11806a;
+    transition: 0.2s ease;
+}
+
+.allstar {
+    color: black;
+    transition: 0.15s ease;
+}
+
+.allstar:hover {
+    color: #7d0061;
+    transition: 0.2s ease;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.profile {
+    margin-left: 20px;
+    margin-top: -110px;
+    width: 220px;
+    background-color: #f4f4f4;
+    height: 485px;
+    box-shadow: 0 0 3px #bdbdbd;
+    border-radius: 8px;
+}
+
+.boxmod {
+    text-align: center;
+    width: 95%;
+    margin-left: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: #5a9bec;
+}
+
+.hrf {
+    border-width: 0.5px;
+}
+
+.infohead {
+    margin-left: 20px;
+    color: #777777;
+}
+
+.info {
+    margin-left: 20px;
+    margin-top: -25px;
+}
+
+.roles {
+    text-align: center;
+    right: 0;
+    background-color: #f4f4f4;
+    position: absolute;
+    margin-top: -370px;
+    width: 220px;
+    box-shadow: 0 0 3px #bdbdbd;
+    border-radius: 8px;
+}
+
+.roleshead {
+    margin-top: 5px;
+}
+
+.hrroles {
+    border-width: 0.4px;
+}
+
+@media only screen and (max-width: 460px) {
+    .headingstuff h1 {
+        display: none;
+    }
+    .circle {
+        margin-left: 260px;
+    }
+    .headingstuff {
+        animation: none;
+        background-size: 300%;
+    }
+    .roles {
+        margin: auto;
+        position: inherit;
+        margin-top: 10px;
+    }
+    .yep {
+        text-align: center;
+        color: #777777;
+        font-family: 'Pacifico', cursive;
+        margin-top: 0px;
+        margin-bottom: -20px;
+        display: block;
+    }
+    .aha {
+        margin: auto;
+        display: block;
+        z-index: 3;
+        margin-top: -170px;
+    }
+    .profile {
+        height: 510px;
+        margin: auto;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        box-shadow: none;
+        margin-top: -110px;
+        z-index: 1;
+    }
 }
