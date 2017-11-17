@@ -124,3 +124,12 @@ function show(elem) {
     elem.classList.add('show');
     elem.classList.remove('hide');
 }
+
+/**
+ * If the element can be seen
+ * @param {Element} elem Element to Show
+ * @returns {Boolean}
+ */
+function showing(elem) {
+    return elem.classList.contains('show');
+}

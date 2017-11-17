@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
+    font-family: 'Open Sans', sans-serif;    
 }
 
 .hide {
@@ -27,7 +30,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background-color: green;
+    background-color: rgb(236, 236, 236);
     height: 50px;
     line-height: 50px;
     padding: 5px 0px;
@@ -37,25 +40,8 @@ header {
     max-width: 1000px;
     height: 100%;
     margin: 0px auto;
+    padding: 0px 10px;
 }
-
-/*
-header a {
-    display: inline-block;
-    background-color: red;
-    color: yellow;
-    text-decoration: none;
-    text-align: center;
-    padding: 14px 16px;
-}
-
-header a:hover {
-    color: black;
-}
-
-header a.current {
-
-} */
 
 .searchbar {
     background: none;
@@ -77,8 +63,10 @@ header a.current {
     border-radius: 10px;
 }
 .opendropdown {
+    height: auto;
     cursor: default;
-    display: inline;
+    display: inline-block;
+    position: relative;
 }
 
 .down-caret {
@@ -86,39 +74,94 @@ header a.current {
     height: 0;
     border-style: solid;
     border-width: 5px 5px 0 5px;
-    border-color: #ffffff transparent transparent transparent;
+    border-color: black transparent transparent transparent;
     display: inline-block;
     margin-left: 3px;
     top: -3px;
     position: relative;
 }
 
+header {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+header a {
+    display: inline-block;
+    padding: 0px 10px;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
+header a:hover {
+    /* background-color: black; */
+    color: rgb(133, 133, 133);
+}
 .dropdown {
     display: none;
     position: absolute;
-    top: 60px;
-    transform: translateX(-10px);
+    top: 100%;
+    right: 0;
     line-height: 1em;
     background: white;
-    border: 2px solid black;
-    padding: 10px 0px;
+    border: 1px solid gray;
+    padding: 10px 0px 5px;
+    box-shadow: 2px 2px 4px gray;
+    font-size: 14px;
+}
+.dropdown::before {
+    content: " ";
+    position: absolute;
+    top: 0; /* At the bottom of the tooltip */
+    right: 25px;
+    transform: translateY(-110%);
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent gray transparent;
 }
 .dropdown.show {
     display: block;
 }
-.dropdown *:not(hr):not(span) {
+.dropdown a {
     display: block;
-    padding: 2px;
     text-decoration: none;
     color: black;
-    padding: 0px 5px;
+    padding: 10px 20px;
+}
+.dropdown a:hover {
+    color: white;
+    background-color: black;
 }
 .dropdown hr {
-    border: 1px solid black;
+    border-top: 1px solid gray;
 }
 .dropdown .user .discsmall {
     font-size: .7em;
     color: gray;
+}
+.signedinas {
+    color: gray;
+    margin: 0px 20px 5px;
+}
+.dropdown .user {
+    font-weight: 600;
+    margin: 0px 20px;
+}
+a.loginbutton {
+    color: white;
+    display: inline;
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+a.loginbutton:hover {
+    background: rgb(114, 114, 114);
+    color: white;
 }
 
 .staff {

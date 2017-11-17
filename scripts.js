@@ -1,6 +1,7 @@
 /// <reference path="./globals/util.js" />
 
-window.onload = window.onhashchange = () => {
+// HEADER SHID
+window.onload = () => {
     console.log('loading');
 
     let loggedin = document.querySelectorAll('.loggedin');
@@ -46,7 +47,10 @@ window.onload = window.onhashchange = () => {
     for (let dropdownopener of dropdowns) {
         dropdown = document.querySelector(dropdownopener.getAttribute('dropdown'))
         dropdownopener.addEventListener('click', (e) => {
-            show(dropdown);
+            if (showing(dropdown))
+                hide(dropdown);
+            else
+                show(dropdown);
             e.stopPropagation();
         });
         dropdown.addEventListener('click', (e) => {
@@ -55,6 +59,16 @@ window.onload = window.onhashchange = () => {
         });
         window.addEventListener('click', () => {
             hide(dropdown);
+        });
+    }
+
+    let searchbars = document.querySelectorAll('.searchbar');
+    for (let searchbar of searchbars) {
+        searchbar.addEventListener('keyup', (e) => {
+            if (e.keyCode == 13) {
+                location.hash = `#/search?q=${searchbar.value}`;
+                searchbar.value = "";
+            }
         });
     }
 
