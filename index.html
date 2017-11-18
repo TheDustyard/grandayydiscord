@@ -70,13 +70,13 @@
                             <hr>
                             <a href="#/help">Help</a>
                             <a href="#/@me/settings">Settings</a>
-                            <a href="/auth/#logout">Logout</a>
+                            <a onclick="location.replace(`/auth/#logout&goto=${toBase64(location.hash)}`);">Logout</a>
                         </div>
                     </div>
                 </div>
                 <div class="loggedout">
-                    <a href="https://discordapp.com/oauth2/authorize?response_type=token&client_id=307231810218360832&scope=identify&redirect_uri=http://127.0.0.1:5500/auth/"
-                        class="loginbutton">Login</a>
+                    <a class="loginbutton" 
+                       onclick="location.replace(`https://discordapp.com/oauth2/authorize?response_type=token&client_id=307231810218360832&scope=identify&redirect_uri=http://127.0.0.1:5500/auth/&state=${toBase64(location.hash)}`);">Login</a>
                 </div>
 
             </div>
@@ -98,7 +98,7 @@
         <button class="hideparent">CLose</button>
         aadskajhsdgskjhfgkjsdhgfakjhgdfadjhfgdkjfhgakjfdhgakdjhfgjka
     </div>
-    <iframe src="/pages/profile" class="content" scrolling="no" onload="this.style.height = this.contentWindow.document.body.scrollHeight + 'px';">
+    <iframe src="/pages/profile" class="content" scrolling="no" onload="this.style.minHeight = this.contentWindow.document.body.scrollHeight + 'px';">
 
     </iframe>
 </body>

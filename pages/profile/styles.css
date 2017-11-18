@@ -14,7 +14,7 @@ body {
     background-image: url("https://cdn.discordapp.com/attachments/290708486516637696/364267633702469632/Screenshot_1.png");
     background-size: 120%;
     background-attachment: fixed;
-    transition: 3s ease-in-out;
+    transition: background-size 3s ease-in-out;
     animation: startup 5s ease;
 }
 
@@ -26,6 +26,27 @@ body {
         background-size: 120%;
     }
 }
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* PROFILE */
+.profile {
+    position: absolute;
+    max-width: 1000px;
+    min-width: 260px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 3px #bdbdbd;
+    border-radius: 8px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 20px;
+}
+/* END PROFILE */
 
 /* PROFILE PICTURE */
 .pfp {
@@ -147,10 +168,13 @@ body {
 .usernameinfo .level {
     font-size: 20px;
 }
-.usernameinfo .level span {
+.usernameinfo .level a {
     font-weight: bold;
     font-size: 18px;
     text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;    
+}
+.usernameinfo .level a:hover {
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;        
 }
 
 .usernameinfo .warns {
@@ -167,6 +191,7 @@ body {
 /* CONTENT */
 .content {
     margin-top: 275px;
+    width: 60%;
 }
 
 .content .ban {
@@ -204,16 +229,19 @@ body {
 .content .backbar {
     text-align: left;
     border-bottom: .4px solid #b7b7b7;
-    width: 75%;
+    width: 100%;
     height: 20px;
     margin-bottom: 20px;
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .content .bio {
     display: inline-block;
     margin-left: 20px;
+    width: calc(100% - 20px);
+    word-wrap: break-word;
+    white-space: normal;
 }
 
 .content .info {
@@ -230,224 +258,48 @@ body {
 }
 /* END CONTENT */
 
-
-
-/* VV CLEAN UP / REMOVE VV */
-
-.warns {
-    color: black;
-    outline: none;
-}
-
-.headingstuff h1 {
-    margin-left: 50px;
-}
-
-.yep {
-    text-align: center;
-    color: #777777;
-    font-family: 'Pacifico', cursive;
-    margin-top: 0px;
-    margin-bottom: -20px;
-    display: block;
-}
-
-
-
-.fa {
-    padding: 10px;
-    font-size: 23px;
-    width: 18px;
-    text-align: center;
-    text-decoration: none;
-    margin-left: 25px;
-    border-radius: 50%;
-}
-
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-.fa-twitter {
-    background: grey;
-    color: white;
-    transition: 0.15s ease;
-}
-
-.fa-twitter:hover {
-    background: #55ACEE;
-    transition: 0.2s ease;
-}
-
-.fa-youtube {
-    background: grey;
-    color: white;
-    transition: 0.15s ease;
-}
-
-.fa-youtube:hover {
-    background: #bb0000;
-    color: white;
-    transition: 0.2s ease;
-}
-
-.fa-instagram {
-    background: grey;
-    color: white;
-    transition: 0.15s ease;
-}
-
-.fa-instagram:hover {
-    background: #125688;
-    color: white;
-    transition: 0.2s ease;
-}
-
-.up {
-    margin-top: -55px;
-}
-
-.fa-snapchat-ghost {
-    background: grey;
-    color: white;
-    transition: 0.15s ease;
-}
-
-.fa-snapchat-ghost:hover {
-    background: #fffc00;
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    transition: 0.2s ease;
-}
-
-.mod {
-    color: black;
-    transition: 0.15s ease;
-}
-
-.mod:hover {
-    color: #5a9bec;
-    transition: 0.2s ease;
-}
-
-.vsauce {
-    color: black;
-    transition: 0.15s ease;
-}
-
-.roleup {
-    margin-top: -20px;
-}
-
-.vsauce:hover {
-    color: #8efa06;
-    transition: 0.2s ease;
-}
-
-.jake {
-    color: black;
-    transition: 0.15s ease;
-}
-
-.jake:hover {
-    color: #cece16;
-    transition: 0.2s ease;
-}
-
-.pirate {
-    color: black;
-    transition: 0.15s ease;
-}
-
-.pirate:hover {
-    color: #ffb22a;
-    transition: 0.2s ease;
-}
-
-.enlisted {
-    color: black;
-    transition: 0.15s ease;
-}
-
-.enlisted:hover {
-    color: #9b59b6;
-    transition: 0.2s ease;
-}
-
-.mwchamp {
-    color: black;
-    transition: 0.15s ease;
-}
-
-.mwchamp:hover {
-    color: #11806a;
-    transition: 0.2s ease;
-}
-
-.allstar {
-    color: black;
-    transition: 0.15s ease;
-}
-
-.allstar:hover {
-    color: #7d0061;
-    transition: 0.2s ease;
-}
-
-a {
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.profile {
-    position: relative;
-    margin: auto;
-    margin-top: 110px;
-    max-width: 1000px;
-    min-width: 260px;
-    padding: 10px;
-    background-color: #f4f4f4;
-    box-shadow: 0 0 3px #bdbdbd;
-    border-radius: 8px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
-
-.boxmod {
-    text-align: center;
-    width: 95%;
-    margin-left: 5px;
-    border-radius: 5px;
-    color: white;
-    background-color: #5a9bec;
-}
-
+/* ROLES */
 .roles {
     text-align: center;
-    right: 0;
     background-color: #f4f4f4;
     position: absolute;
-    margin-top: -370px;
-    width: 260px;
+    width: 30%;
     padding: 10px;
     box-shadow: 0 0 3px #bdbdbd;
     border-radius: 8px;
-    margin: auto;
     position: inherit;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
+    top: 200px;
+    right: 20px;
+    line-height: 40px;
 }
-
-.roleshead {
+.roles .header {
+    font-size: 35px;
+    font-weight: bold;
     margin-top: 5px;
 }
 
-.hrroles {
+.roles hr {
     border-width: 0.4px;
+    border-bottom: 1px solid #b7b7b7;
 }
+
+.roles a {
+    line-height: 20px;
+    height: 20px;
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 4px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    margin: 0px 2px;
+}
+.roles a:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0.5));
+    color: #f4f4f4;
+}
+/* END ROLES */
+
+/* MOBILE CHANGES */
+
 
 @media only screen and (max-width: 720px) {
     html,

@@ -22,7 +22,7 @@ iframe {
 
 iframe.content {
     width: 100%;
-    height: calc(100% - 50px);
+    height: calc(100% - 60px);
     display: block;
 }
 

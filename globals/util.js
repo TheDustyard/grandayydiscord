@@ -145,3 +145,21 @@ function queryApplyAll(query, callback) {
         callback(current, all);
     }
 }
+
+/**
+ * Encode a string into Base 64
+ * @param {String} string String to encode
+ * @returns {String} Base 64 encoded string
+ */
+function toBase64(string) {
+    return btoa(string);
+}
+
+/**
+ * Decode a string from Base 64
+ * @param {String} string String to decode
+ * @returns {String} Decoded string
+ */
+function fromBase64(string) {
+    return atob(string);
+}
