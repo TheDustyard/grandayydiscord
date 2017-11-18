@@ -133,3 +133,15 @@ function show(elem) {
 function showing(elem) {
     return elem.classList.contains('show');
 }
+
+/**
+ * Apply a function to all items found by the query
+ * @param {string} query Query selector
+ * @param {(current: Element, all: Element[]) => void} callback Callback for each item
+ */
+function queryApplyAll(query, callback) {
+    let all = Array.from(document.querySelectorAll(query)).filter((x, i, a) => a.indexOf(x) == i);
+    for (let current of all) {
+        callback(current, all);
+    }
+}

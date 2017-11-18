@@ -42,11 +42,9 @@ window.onload = () => {
         console.log('logged out');
     }
 
-    let dropdown;
-    let dropdowns = Array.from(document.getElementsByClassName('opendropdown')).filter((x, i, a) => a.indexOf(x) == i);
-    for (let dropdownopener of dropdowns) {
-        dropdown = document.querySelector(dropdownopener.getAttribute('dropdown'))
-        dropdownopener.addEventListener('click', (e) => {
+    queryApplyAll(".opendropdown", (current, all) => {
+        let dropdown = document.querySelector(current.getAttribute('dropdown'))
+        current.addEventListener('click', (e) => {
             if (showing(dropdown))
                 hide(dropdown);
             else
@@ -60,13 +58,11 @@ window.onload = () => {
         window.addEventListener('click', () => {
             hide(dropdown);
         });
-    }
+    });
 
-    let menu;
-    let openmenus = Array.from(document.getElementsByClassName('openmenu')).filter((x, i, a) => a.indexOf(x) == i);
-    for (let menuopener of openmenus) {
-        menu = document.querySelector(menuopener.getAttribute('menu'))
-        menuopener.addEventListener('click', (e) => {
+    queryApplyAll(".openmenu", (current, all) => {
+        let menu = document.querySelector(current.getAttribute('menu'))
+        current.addEventListener('click', (e) => {
             if (showing(menu))
                 hide(menu);
             else
@@ -80,39 +76,24 @@ window.onload = () => {
         window.addEventListener('click', () => {
             hide(menu);
         });
-    }
+    })
 
-    //MAKE INTO FUNCTIOn
-
-    let parenthider;
-    let parenthiders = Array.from(document.getElementsByClassName('hideparent')).filter((x, i, a) => a.indexOf(x) == i);
-    for (let parenthidere of parenthiders) {
-        menu = document.querySelector(menuopener.getAttribute('menu'))
-        menuopener.addEventListener('click', (e) => {
-            if (showing(menu))
-                hide(menu);
-            else
-                show(menu);
+    queryApplyAll(".hideparent", (current, all) => {
+        parent = current.parentElement
+        current.addEventListener('click', (e) => {
+            hide(parent);
             e.stopPropagation();
         });
-        menu.addEventListener('click', (e) => {
-            show(menu);
-            e.stopPropagation();
-        });
-        window.addEventListener('click', () => {
-            hide(menu);
-        });
-    }
+    });
 
-    let searchbars = document.querySelectorAll('.searchbar');
-    for (let searchbar of searchbars) {
-        searchbar.addEventListener('keyup', (e) => {
+    queryApplyAll(".searchbar", (current, all) => {
+        current.addEventListener('keyup', (e) => {
             if (e.keyCode == 13) {
-                location.hash = `#/search?q=${searchbar.value}`;
-                searchbar.value = "";
+                location.hash = `#/search?q=${current.value}`;
+                current.value = "";
             }
         });
-    }
+    });
 
     let base = document.createElement('base');
     base.target = "_parent";
@@ -127,7 +108,7 @@ window.onhashchange = () => {
     let dropdown;
     let dropdowns = Array.from(document.getElementsByClassName('opendropdown')).filter((x, i, a) => a.indexOf(x) == i);
     for (let dropdownopener of dropdowns) {
-        dropdown = document.querySelector(dropdownopener.getAttribute('dropdown'))        
+        dropdown = document.querySelector(dropdownopener.getAttribute('dropdown'))
         hide(dropdown);
     }
 }
