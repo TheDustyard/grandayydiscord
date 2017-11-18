@@ -95,10 +95,24 @@ window.onload = () => {
         });
     });
 
-    let base = document.createElement('base');
-    base.target = "_parent";
     for (let frame of document.querySelectorAll('iframe')) {
-        frame.contentWindow.document.body.appendChild(base);
+        let links = frame.contentWindow.document.querySelectorAll('a');
+        for (let link of links) {
+            if (link.hasAttribute('external')) {
+                link.onclick = (e) => {
+                    location.href = link.href;
+                    e.preventDefault();
+                };
+                continue;
+            }
+
+            link.setAttribute('page', link.hash);
+            link.removeAttribute('href');
+            link.onclick = (e) => {
+                location.hash = link.getAttribute('page');
+                e.preventDefault();
+            };
+        }
     }
 
     console.log('loaded all synchronaoussss')

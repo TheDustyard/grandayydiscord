@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:300');
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 html,
 body {
     -webkit-touch-callout: none;
@@ -9,46 +8,14 @@ body {
     -ms-user-select: none;
     user-select: none;
     cursor: default;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0px 0px 0px 0px;
     transition: 0.2s ease;
-}
-
-.yep {
-    display: none;
-}
-
-.headingstuff {
-    font-family: 'Pacifico', cursive;
-    background-attachment: fixed;
-    background-size: 100%;
-    height: 230px;
     background-image: url("https://cdn.discordapp.com/attachments/290708486516637696/364267633702469632/Screenshot_1.png");
-    text-align: left;
-    color: white;
-    padding: 20px;
-    font-size: 3em;
-    margin: 0;
-    text-shadow: 1px 1px black;
-    animation: startup 5s ease-in-out;
+    background-size: 120%;
+    background-attachment: fixed;
     transition: 3s ease-in-out;
-}
-
-.aha {
-    border-radius: 100%;
-    border: 10px #f4f4f4 solid;
-    z-index: 1;
-    margin-left: 20px;
-    margin-top: -150px;
-    pointer-events: none;
-}
-
-.headingstuff:hover {
-    background-size: 105%;
-}
-
-.aha:hover~.headingstuff {
-    background-size: 105%;
+    animation: startup 5s ease;
 }
 
 @keyframes startup {
@@ -56,37 +23,236 @@ body {
         background-size: 140%;
     }
     100% {
-        background-size: 100%;
+        background-size: 120%;
     }
 }
 
-.circle {
+/* PROFILE PICTURE */
+.pfp {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    height: 200px;
+    width: 200px;
+}
+
+.pfp .picture {
+    position: absolute;
+    border-radius: 100%;
+    border: 10px #f4f4f4 solid;
+    z-index: 1;
+    display: block;
+    pointer-events: none;
+    margin: -10px;
+    top: 0px;
+}
+
+.pfp .circle {
     position: absolute;
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    background-color: lightgray;
+    background-color: white;
     z-index: 2;
-    margin-left: 180px;
-    margin-top: -60px;
     border: 5px #f4f4f4 solid;
+    bottom: 0;
+    right: 0;
+}
+.pfp [class="circle"] {
+    display: none;
+}
+.pfp .circle.offline {
+    background-color: #747f8d;
+}
+.pfp .circle.online {
+    background-color: #43b581;    
+}
+.pfp .circle.away {
+    background-color: #faa61a;    
+}
+.pfp .circle.dnd {
+    background-color: #f04747;    
+}
+/* END PROFILE PICTURE */
+
+/* USERNAME INFO */
+.usernameinfo {
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    width: calc(100% - 400px);
+}
+
+.usernameinfo .hoistrole {
+    font-size: 25px;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 0px 4px;
+    margin-left: 100px;
+}
+.usernameinfo .backbar {
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 20px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.usernameinfo .nickname {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.usernameinfo .bot {
+    background-color: #7289da;
+    border-radius: 6px;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 3px 6px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    font-size: 14px;
+    margin-left: 6px;
+}
+
+.usernameinfo .tag {
+    margin-top: -15px;
+    margin-left: 1px;
+}
+.usernameinfo .tag .username {
+    font-weight: bold;
+    font-size: 25px;
+}
+.usernameinfo .tag .discriminator {
+    color: gray;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.usernameinfo .playing {
+    font-size: 20px;
+    font-style: oblique;
+}
+.usernameinfo .playing .game {
+    font-weight: bold;
+}
+
+.usernameinfo .joined {
+    font-size: 20px;
+}
+.usernameinfo .joined span {
+    font-weight: bold;
+}
+
+.usernameinfo .level {
+    font-size: 20px;
+}
+.usernameinfo .level span {
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;    
+}
+
+.usernameinfo .warns {
+    font-size: 20px;
+}
+.usernameinfo .warns a {
+    font-weight: bold;
+}
+.usernameinfo .warns a:hover {
+    color: #f04747;
+}
+/* END USERNAME INFO */
+
+/* CONTENT */
+.content {
+    margin-top: 275px;
+}
+
+.content .ban {
+    z-index: 100;
+    position: absolute;
+    display: block;
+    background-color: red;
+    transition: 0.2s ease;
+    cursor: pointer;
+    text-align: center;
+    width: 200px;
+    border-radius: 5px;
+    color: white;
+    padding: 4px;
+    font-size: 30px;
+    top: 230px;
+    left: 30px;
+}
+
+.content .ban:hover {
+    transition: 0.4s ease;
+    background-color: #980000;
+    box-shadow: inset 0 0 24px #3c0000;
+}
+
+.content .backbar span {
+    display: inline;
+    font-size: 25px;
+    color: #777777;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 0px 10px;
+    margin-left: 30px;
+}
+.content .backbar {
+    text-align: left;
+    border-bottom: .4px solid #b7b7b7;
+    width: 75%;
+    height: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.content .bio {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.content .info {
+    width: calc(100% - 60px);
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 20px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.content .info .name {
+    font-weight: bold;
+}
+/* END CONTENT */
+
+
+
+/* VV CLEAN UP / REMOVE VV */
+
+.warns {
+    color: black;
+    outline: none;
 }
 
 .headingstuff h1 {
-    margin-left: 250px;
+    margin-left: 50px;
 }
 
-hr {
+.yep {
+    text-align: center;
+    color: #777777;
+    font-family: 'Pacifico', cursive;
+    margin-top: 0px;
+    margin-bottom: -20px;
     display: block;
-    width: 80%;
-    margin-top: -13px;
-    margin-bottom: -13px;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: solid;
-    border-width: 0.4px;
-    border-color: #b7b7b7;
 }
+
+
 
 .fa {
     padding: 10px;
@@ -94,7 +260,7 @@ hr {
     width: 18px;
     text-align: center;
     text-decoration: none;
-    margin-left: 10px;
+    margin-left: 25px;
     border-radius: 50%;
 }
 
@@ -139,7 +305,7 @@ hr {
 }
 
 .up {
-    margin-top: -25px;
+    margin-top: -55px;
 }
 
 .fa-snapchat-ghost {
@@ -172,29 +338,6 @@ hr {
 
 .roleup {
     margin-top: -20px;
-}
-
-.ban {
-    background-color: red;
-    transition: 0.2s ease;
-    cursor: pointer;
-    text-align: center;
-    width: 95%;
-    margin-left: 5px;
-    border-radius: 5px;
-    margin-top: -15px;
-    color: white;
-}
-
-.ban:hover {
-    transition: 0.3s ease;
-    box-shadow: inset 0 0 20px #8a2121;
-}
-
-.ban:active {
-    transition: 0.4s ease;
-    background-color: #980000;
-    box-shadow: inset 0 0 24px #3c0000;
 }
 
 .vsauce:hover {
@@ -258,13 +401,17 @@ a {
 }
 
 .profile {
-    margin-left: 20px;
-    margin-top: -110px;
-    width: 220px;
+    position: relative;
+    margin: auto;
+    margin-top: 110px;
+    max-width: 1000px;
+    min-width: 260px;
+    padding: 10px;
     background-color: #f4f4f4;
-    height: 485px;
     box-shadow: 0 0 3px #bdbdbd;
     border-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 .boxmod {
@@ -276,29 +423,22 @@ a {
     background-color: #5a9bec;
 }
 
-.hrf {
-    border-width: 0.5px;
-}
-
-.infohead {
-    margin-left: 20px;
-    color: #777777;
-}
-
-.info {
-    margin-left: 20px;
-    margin-top: -25px;
-}
-
 .roles {
     text-align: center;
     right: 0;
     background-color: #f4f4f4;
     position: absolute;
     margin-top: -370px;
-    width: 220px;
+    width: 260px;
+    padding: 10px;
     box-shadow: 0 0 3px #bdbdbd;
     border-radius: 8px;
+    margin: auto;
+    position: inherit;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
 .roleshead {
@@ -309,43 +449,10 @@ a {
     border-width: 0.4px;
 }
 
-@media only screen and (max-width: 460px) {
-    .headingstuff h1 {
-        display: none;
-    }
-    .circle {
-        margin-left: 260px;
-    }
-    .headingstuff {
+@media only screen and (max-width: 720px) {
+    html,
+    body {
+        background-size: 400%;
         animation: none;
-        background-size: 300%;
-    }
-    .roles {
-        margin: auto;
-        position: inherit;
-        margin-top: 10px;
-    }
-    .yep {
-        text-align: center;
-        color: #777777;
-        font-family: 'Pacifico', cursive;
-        margin-top: 0px;
-        margin-bottom: -20px;
-        display: block;
-    }
-    .aha {
-        margin: auto;
-        display: block;
-        z-index: 3;
-        margin-top: -170px;
-    }
-    .profile {
-        height: 510px;
-        margin: auto;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
-        box-shadow: none;
-        margin-top: -110px;
-        z-index: 1;
     }
 }
