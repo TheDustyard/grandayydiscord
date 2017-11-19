@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 html,
 body {
+    width: 100%;
+    height: 100%;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -34,17 +36,18 @@ a {
 
 /* PROFILE */
 .profile {
-    position: absolute;
+    position: relative;
     max-width: 1000px;
     min-width: 260px;
     padding: 10px;
     background-color: #f4f4f4;
     box-shadow: 0 0 3px #bdbdbd;
     border-radius: 8px;
-    top: 50%;
+    top: 100px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
     padding-bottom: 20px;
+    margin-bottom: 100px;
 }
 /* END PROFILE */
 
@@ -192,6 +195,7 @@ a {
 .content {
     margin-top: 275px;
     width: 60%;
+    display: inline-block;
 }
 
 .content .ban {
@@ -260,16 +264,18 @@ a {
 
 /* ROLES */
 .roles {
+    float: right;
     text-align: center;
     background-color: #f4f4f4;
-    position: absolute;
+    position: relative;
+    display: block;
     width: 30%;
     padding: 10px;
     box-shadow: 0 0 3px #bdbdbd;
     border-radius: 8px;
     position: inherit;
     top: 200px;
-    right: 20px;
+    margin-right: 20px;
     line-height: 40px;
 }
 .roles .header {
@@ -298,9 +304,9 @@ a {
 }
 /* END ROLES */
 
+
+
 /* MOBILE CHANGES */
-
-
 @media only screen and (max-width: 720px) {
     html,
     body {

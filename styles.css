@@ -5,7 +5,7 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
-    font-family: 'Open Sans', sans-serif;    
+    font-family: 'Open Sans', sans-serif;
 }
 
 .hide {
@@ -151,6 +151,7 @@ header a:hover {
 .dropdown .user {
     font-weight: 600;
     margin: 0px 20px;
+    white-space: nowrap;
 }
 a.loginbutton {
     color: white;
