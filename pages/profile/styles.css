@@ -2,7 +2,7 @@
 html,
 body {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -58,6 +58,7 @@ a {
     left: 30px;
     height: 200px;
     width: 200px;
+    margin: 10px;
 }
 
 .pfp .picture {
@@ -68,7 +69,7 @@ a {
     display: block;
     pointer-events: none;
     margin: -10px;
-    top: 0px;
+    top: 10px;
 }
 
 .pfp .circle {
@@ -97,6 +98,60 @@ a {
 .pfp .circle.dnd {
     background-color: #f04747;    
 }
+
+.pfp .roles {
+    float: right;
+    text-align: center;
+    background-color: #f4f4f4;
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    padding-top: 220px;
+    box-shadow: 0 0 3px #bdbdbd;
+    border-radius: 8px;
+    position: inherit;
+    left: -10px;
+    line-height: 40px;
+}
+.pfp .roles .header {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.pfp .roles .tag {
+    margin-top: 5px;
+    margin-bottom: -5px;
+}
+.pfp .roles .tag .username {
+    font-weight: bold;
+    font-size: 25px;
+}
+.pfp .roles .tag .discriminator {
+    color: gray;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.pfp .roles hr {
+    border-width: 0.4px;
+    border-bottom: 1px solid #b7b7b7;
+}
+
+.pfp .roles a {
+    line-height: 20px;
+    height: 20px;
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 4px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    margin: 0px 2px;
+}
+.pfp .roles a:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0.5));
+    color: #f4f4f4;
+}
 /* END PROFILE PICTURE */
 
 /* USERNAME INFO */
@@ -120,6 +175,26 @@ a {
     height: 20px;
     text-align: left;
     margin-bottom: 10px;
+}
+.usernameinfo .ban {
+    z-index: 100;
+    display: inline-block;
+    background-color: red;
+    transition: 0.2s ease;
+    cursor: pointer;
+    text-align: center;
+    width: 200px;
+    border-radius: 5px;
+    color: white;
+    padding: 4px;
+    font-size: 30px;
+    top: 230px;
+    left: 30px;
+}
+.usernameinfo .ban:hover {
+    transition: 0.4s ease;
+    background-color: #980000;
+    box-shadow: inset 0 0 24px #3c0000;
 }
 
 .usernameinfo .nickname {
@@ -194,31 +269,9 @@ a {
 /* CONTENT */
 .content {
     margin-top: 275px;
+    margin-left: 300px;
     width: 60%;
     display: inline-block;
-}
-
-.content .ban {
-    z-index: 100;
-    position: absolute;
-    display: block;
-    background-color: red;
-    transition: 0.2s ease;
-    cursor: pointer;
-    text-align: center;
-    width: 200px;
-    border-radius: 5px;
-    color: white;
-    padding: 4px;
-    font-size: 30px;
-    top: 230px;
-    left: 30px;
-}
-
-.content .ban:hover {
-    transition: 0.4s ease;
-    background-color: #980000;
-    box-shadow: inset 0 0 24px #3c0000;
 }
 
 .content .backbar span {
@@ -261,48 +314,6 @@ a {
     font-weight: bold;
 }
 /* END CONTENT */
-
-/* ROLES */
-.roles {
-    float: right;
-    text-align: center;
-    background-color: #f4f4f4;
-    position: relative;
-    display: block;
-    width: 30%;
-    padding: 10px;
-    box-shadow: 0 0 3px #bdbdbd;
-    border-radius: 8px;
-    position: inherit;
-    top: 200px;
-    margin-right: 20px;
-    line-height: 40px;
-}
-.roles .header {
-    font-size: 35px;
-    font-weight: bold;
-    margin-top: 5px;
-}
-
-.roles hr {
-    border-width: 0.4px;
-    border-bottom: 1px solid #b7b7b7;
-}
-
-.roles a {
-    line-height: 20px;
-    height: 20px;
-    display: inline-block;
-    padding: 2px 5px;
-    border-radius: 4px;
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    margin: 0px 2px;
-}
-.roles a:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0.5));
-    color: #f4f4f4;
-}
-/* END ROLES */
 
 
 

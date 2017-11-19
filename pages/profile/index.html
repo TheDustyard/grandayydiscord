@@ -6,6 +6,24 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            window.onload = () => {
+                let rolemenu = document.querySelector('div.pfp');
+                let rolemenutop = rolemenu.getBoundingClientRect().top;
+
+                parent.window.onscroll = (e) => {
+                    let offset = Math.abs(parent.document.body.getBoundingClientRect().top);
+                    console.log(rolemenutop);
+                    console.log(offset);
+                    console.log(offset >= rolemenutop)
+                    if (offset >= rolemenutop) {
+                        rolemenu.style.top = `${offset - 100}px`;;
+                    } else {
+                        rolemenu.removeAttribute('style');
+                    }
+                }
+            }
+        </script>
     </head>
 
     <body>
@@ -13,6 +31,19 @@
             <div class="pfp">
                 <img class="picture" draggable="false" width="200px" src="https://cdn.discordapp.com/avatars/202911530843373568/57d4758d62209f607d85cde4dfe59442.png">
                 <div class="circle dnd"></div>
+                <div class="roles">
+                    <div class="tag">
+                        <span class="username">FatalError</span><span class="discriminator">#7622</span>
+                    </div>
+                    <hr>
+                    <a href="#/search?role=idofrole" style="background-color:#5a9bec">Content Cop</a>
+                    <a href="#/search?role=idofrole" style="background-color:#8efa06">Vsauce</a>
+                    <a href="#/search?role=idofrole" style="background-color:#cece16">Jake Pauler</a>
+                    <a href="#/search?role=idofrole" style="background-color:#ffb22a">Pirate</a>
+                    <a href="#/search?role=idofrole" style="background-color:#11806a">Memewar Champion</a>
+                    <a href="#/search?role=idofrole" style="background-color:#7d0061">All Star</a>
+                    <a href="#/search?role=idofrole" style="background-color:#9b59b6">Enlisted</a>
+                </div>
             </div>
             <div class="usernameinfo">
                 <div class="backbar">
@@ -23,14 +54,14 @@
                     <span class="username">FatalError</span><span class="discriminator">#7622</span>
                 </div>
                 <div class="playing">
-                    Playing: <span class="game">PUBG</span>
+                    <div class="ban">BANNED</div>
+                    <!-- Playing: <span class="game">PUBG</span> -->
                 </div>
                 <div class="joined">Joined: <span>Wed, Oct 11, 2017</span></div>
                 <div class="level">Level: <a href="#/search?level=30" style="color: #8efa06">30</a></div>
                 <div class="warns">Warnings: <a href="#/search?id=fatalerrorsid&page=warnings">6000000</a></div>
             </div>
             <div class="content">
-                <div class="ban">BANNED</div>
                 <div class="backbar">
                     <span>Bio</span>
                 </div>
@@ -44,17 +75,6 @@
                     <span class="name">Timezone:</span> UTC +1000:00<br>
                     <span class="name">Website:</span> <a href="https://aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com" external>https://aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com</a><br>
                 </div>
-            </div>
-            <div class="roles">
-                <div class="header">Roles</div>
-                <hr>
-                <a href="#/search?role=idofrole" style="background-color:#5a9bec">Content Cop</a>
-                <a href="#/search?role=idofrole" style="background-color:#8efa06">Vsauce</a>
-                <a href="#/search?role=idofrole" style="background-color:#cece16">Jake Pauler</a>
-                <a href="#/search?role=idofrole" style="background-color:#ffb22a">Pirate</a>
-                <a href="#/search?role=idofrole" style="background-color:#11806a">Memewar Champion</a>
-                <a href="#/search?role=idofrole" style="background-color:#7d0061">All Star</a>
-                <a href="#/search?role=idofrole" style="background-color:#9b59b6">Enlisted</a>
             </div>
         </div>
     </body>
