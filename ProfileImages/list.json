@@ -1,11 +1,190 @@
 {
     "Train": {
         "author": {
-            "name": "unknown",
-            "link": null
+            "name": "unknown"
         },
         "submitted": "i-win",
-        "src": "Train"
+        "src": "Train.png"
     },
-    
+    "Purple City": {
+        "author": {
+            "name": "Florian Renner",
+            "link": "http://florian-renner.com/magnatron-20"
+        },
+        "submitted": "Legion",
+        "src": "Purple City.webp"
+    },
+    "Jet Attack": {
+        "author": {
+            "name": "Legion"
+        },
+        "submitted": "Legion",
+        "src": "Jet Attack.webp"
+    },
+    "Fighter Formation": {
+        "author": {
+            "name": "Legion"
+        },
+        "submitted": "Legion",
+        "src": "Fighter Formation.webp"
+    },
+    "Snowy Mountian": {
+        "author": {
+            "name": "Legion"
+        },
+        "submitted": "Legion",
+        "src": "Snowy Mountian.webp"
+    },
+    "Snow Fighters": {
+        "author": {
+            "name": "Legion"
+        },
+        "submitted": "Legion",
+        "src": "Snow Fighters.webp"
+    },
+    "Helicopter Overhead": {
+        "author": {
+            "name": "Legion"
+        },
+        "submitted": "Legion",
+        "src": "Helicopter Overhead.webp"
+    },
+    "Rocket": {
+        "author": {
+            "name": "Legion"
+        },
+        "submitted": "Legion",
+        "src": "Rocket.webp"
+    },
+    "Camo Watch": {
+        "author": {
+            "name": "Legion"
+        },
+        "submitted": "Legion",
+        "src": "Camo Watch.webp"
+    },
+    "Attack On City": {
+        "author": {
+            "name": "Legion"
+        },
+        "submitted": "Legion",
+        "src": "Attack On City.webp"
+    },
+    "Foggy Airfield": {
+        "author": {
+            "name": "Legion"
+        },
+        "submitted": "Legion",
+        "src": "Foggy Airfield.webp"
+    },
+    "Attention": {
+        "author": {
+            "name": "Legion"
+        },
+        "submitted": "Legion",
+        "src": "Attention.webp"
+    },
+    "Vanish": {
+        "author": {
+            "name":"Xoran"
+        },
+        "submitted":"Xoran",
+        "src": "Vanish.png"
+    },
+    "350Arghh": {
+        "author": {
+            "name": "Khyzyl Saleem",
+            "link": "https://www.artstation.com/khyzylsaleem"
+        },
+        "submitted": "Legion",
+        "src": "350Arghh.webp"
+    },
+    "350z": {
+        "author": {
+            "name": "Khyzyl Saleem",
+            "link": "https://www.artstation.com/khyzylsaleem"
+        },
+        "submitted": "Legion",
+        "src": "350z.webp"
+    },
+    "Cargohold": {
+        "author": {
+            "name": "Khyzyl Saleem",
+            "link": "https://www.artstation.com/khyzylsaleem"
+        },
+        "submitted": "Legion",
+        "src": "Cargohold.webp"
+    },
+    "Fkus": {
+        "author": {
+            "name": "Khyzyl Saleem",
+            "link": "https://www.artstation.com/khyzylsaleem"
+        },
+        "submitted": "Legion",
+        "src": "Fkus.webp"
+    },
+    "Ford GT Widebody": {
+        "author": {
+            "name": "Khyzyl Saleem",
+            "link": "https://www.artstation.com/khyzylsaleem"
+        },
+        "submitted": "Legion",
+        "src": "Ford GT Widebody.webp"
+    },
+    "Grassroots LFA": {
+        "author": {
+            "name": "Khyzyl Saleem",
+            "link": "https://www.artstation.com/khyzylsaleem"
+        },
+        "submitted": "Legion",
+        "src": "Grassroots LFA.webp"
+    },
+    "Handbrake": {
+        "author": {
+            "name": "Khyzyl Saleem",
+            "link": "https://www.artstation.com/khyzylsaleem"
+        },
+        "submitted": "Legion",
+        "src": "Handbrake.webp"
+    },
+    "Koenigsegg Agera": {
+        "author": {
+            "name": "Khyzyl Saleem",
+            "link": "https://www.artstation.com/khyzylsaleem"
+        },
+        "submitted": "Legion",
+        "src": "Keonigsegg Agera.webp"
+    },
+    "Missile Ferrari 599": {
+        "author": {
+            "name": "Khyzyl Saleem",
+            "link": "https://www.artstation.com/khyzylsaleem"
+        },
+        "submitted": "Legion",
+        "src": "Missile Ferrari 599.webp"
+    },
+    "Nissan 30zx": {
+        "author": {
+            "name": "Khyzyl Saleem",
+            "link": "https://www.artstation.com/khyzylsaleem"
+        },
+        "submitted": "Legion",
+        "src": "Nissan 30zx.webp"
+    },
+    "What Happened": {
+        "author": {
+            "name": "Khyzyl Saleem",
+            "link": "https://www.artstation.com/khyzylsaleem"
+        },
+        "submitted": "Legion",
+        "src": "What Happened.webp"
+    },
+    "What The Flux": {
+        "author": {
+            "name": "Khyzyl Saleem",
+            "link": "https://www.artstation.com/khyzylsaleem"
+        },
+        "submitted": "Legion",
+        "src": "What The Flux.webp"
+    }
 }
