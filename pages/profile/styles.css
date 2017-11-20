@@ -54,9 +54,10 @@ a {
 /* PROFILE PICTURE */
 .pfp {
     position: absolute;
+    display: block;
     top: 30px;
     left: 30px;
-    height: 200px;
+    height: auto;
     width: 200px;
     margin: 10px;
 }
@@ -80,7 +81,7 @@ a {
     background-color: white;
     z-index: 2;
     border: 5px #f4f4f4 solid;
-    bottom: 0;
+    top: 160px;
     right: 0;
 }
 .pfp [class="circle"] {
@@ -110,9 +111,8 @@ a {
     padding-top: 220px;
     box-shadow: 0 0 3px #bdbdbd;
     border-radius: 8px;
-    position: inherit;
-    left: -10px;
     line-height: 40px;
+    left: 10px;
 }
 .pfp .roles .header {
     font-size: 35px;
@@ -314,14 +314,3 @@ a {
     font-weight: bold;
 }
 /* END CONTENT */
-
-
-
-/* MOBILE CHANGES */
-@media only screen and (max-width: 720px) {
-    html,
-    body {
-        background-size: 400%;
-        animation: none;
-    }
-}

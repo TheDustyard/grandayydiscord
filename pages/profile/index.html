@@ -2,28 +2,14 @@
 <html>
 
     <head>
+        <!-- COMMON -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script>
-            window.onload = () => {
-                let rolemenu = document.querySelector('div.pfp');
-                let rolemenutop = rolemenu.getBoundingClientRect().top;
-
-                parent.window.onscroll = (e) => {
-                    let offset = Math.abs(parent.document.body.getBoundingClientRect().top);
-                    console.log(rolemenutop);
-                    console.log(offset);
-                    console.log(offset >= rolemenutop)
-                    if (offset >= rolemenutop) {
-                        rolemenu.style.top = `${offset - 100}px`;;
-                    } else {
-                        rolemenu.removeAttribute('style');
-                    }
-                }
-            }
-        </script>
+        <meta charset="utf-8">
+        <!-- STYLES -->
+        <link rel="stylesheet" href="/pages/profile/styles.css">
+        <link rel="stylesheet" href="/pages/profile/stylesm.css" media="only screen and (max-width: 1020px)">
+        <!-- PROFILE SCROLLER -->
+        <script src="profilescroller.js"></script>
     </head>
 
     <body>
