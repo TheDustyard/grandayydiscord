@@ -314,14 +314,3 @@ a {
     font-weight: bold;
 }
 /* END CONTENT */
-
-
-
-/* MOBILE CHANGES */
-@media only screen and (max-width: 720px) {
-    html,
-    body {
-        background-size: 400%;
-        animation: none;
-    }
-}

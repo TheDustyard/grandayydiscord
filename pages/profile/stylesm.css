@@ -1,0 +1,10 @@
+/* MOBILE CHANGES */
+html,
+body {
+    background-size: 400%;
+    animation: none;
+}
+
+.profile {
+    background: red;
+}
