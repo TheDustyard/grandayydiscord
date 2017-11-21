@@ -11,6 +11,11 @@ window.onload = () => {
         GETJSON(`https://dusterthefirst.ddns.net:8080/me?token_type=${getCookie('token_type')}&access_token=${getCookie('access_token')}`, (data) => {
             console.log(data);
 
+            if (data.code === 0) {
+                location.replace(`/auth/#logout&goto=${toBase64(location.hash)}`);
+                return;
+            }
+
             Array.from(document.querySelectorAll('.currentuser.username')).forEach((x) => {
                 x.innerHTML = data.username;
             });
