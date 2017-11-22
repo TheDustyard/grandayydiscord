@@ -4,8 +4,9 @@ window.onload = () => {
     let rolemenutop = rolemenu.getBoundingClientRect().top;
 
     window.onscroll = (e) => {
-        let offset = Math.abs(document.body.getBoundingClientRect().top);
-        if ((offset + 10) >= rolemenutop) {
+        let offset = Math.abs(document.body.getBoundingClientRect().top - 100);
+        
+        if ((offset) >= rolemenutop) {
             if ((offset - 50) + rolemenu.getBoundingClientRect().height < profile.getBoundingClientRect().height)
                 rolemenu.style.top = `${offset - 100}px`;
             else {
@@ -15,4 +16,6 @@ window.onload = () => {
             rolemenu.removeAttribute('style');
         }
     }
+
+    window.onscroll();
 }

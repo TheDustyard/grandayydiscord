@@ -1,4 +1,11 @@
 {
+    "Street": {
+        "author": {
+            "name": "Skylight"
+        },
+        "submitted": "Skylight",
+        "src":"Street.png"
+    },
     "Train": {
         "author": {
             "name": "unknown"
@@ -13,6 +20,13 @@
         },
         "submitted": "Legion",
         "src": "Purple City.webp"
+    },
+    "Minecraft": {
+        "author": {
+            "name": "Heaton Holiday"
+        },
+        "submitted": "DankConspiracy",
+        "src":"Minecraft.png"
     },
     "Jet Attack": {
         "author": {
