@@ -83,13 +83,70 @@
             	background-color: #161616;
             	transition: background-color 0.2s ease;
             }
+		input[type="submit"] {
+		    padding: 10px;
+    		    background-color: #777777;
+    		    border: none;
+                    border-radius: 5px 0px 0px 5px;
+                    cursor: pointer;
+                    color: white;
+		    outline: none;
+		    transition: 0.2s ease;
+		}
+		input[type="submit"]:hover {
+		    background-color: #565656;
+		    box-shadow: 0 0 3px #484848;
+		}
+		input[type="submit"]:active {
+		    background-color: #3a3939;
+		    box-shadow: 0 0 8px 1px #3a3939;
+		}
+		input[type="reset"] {
+		    padding: 10px;
+    		    background-color: #777777;
+    		    border: none;
+                    border-radius: 0px 5px 5px 0px;
+                    cursor: pointer;
+                    color: white;
+		    outline: none;
+		    transition: 0.2s ease;
+		}
+		input[type="reset"]:hover {
+		    background-color: #565656;
+		    box-shadow: 0 0 3px #484848;
+		}
+		input[type="reset"]:active {
+		    background-color: #3a3939;
+		    box-shadow: 0 0 8px 1px #3a3939;
+		}
             @media screen and (max-width: 768px) {
-	    .fancybutton {
-            display: none;
-	    }
+		input[name="tag"] {
+		  display: none;
+		}
+		input[type="text"] {
+    		  display: inline-block;
+    		  font-family: 'arial', sans-serif;
+    		  margin-bottom: 10px;
+   		  width: 96%;
+  		  left: 2.7px;
+    		  position: relative;
+		}
+		textarea[name="content"] {
+   		  height: 100px;
+    		  resize: none;
+    		  font-family: 'arial', sans-serif;
+   		  box-shadow: none;
+   		  transition: 0.2s ease;
+    		  outline: none;
+    		  border-radius: 3px;
+    		  border-color: #cecece;
+    		  width: 95%;
+    		  margin: auto;
+    		  display: block;
+		}
             }
 	    .forme {
-	    z-index: 1;
+	      z-index: 1;
 	     }
         </style>
     </head>
