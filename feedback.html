@@ -27,6 +27,22 @@
                 display: inline-block;
 		font-family: 'arial', sans-serif;
             }
+	    input[name="title"] {
+		border: 1px solid;
+    		padding-left: 2px;
+    		border-radius: 3px;
+		transition: 0.2s ease;
+		outline: none;
+ 		border-color: #cecece;
+	    }
+	    input[name="title"]:focus {
+		box-shadow: 0 0 2px 0px #020202;
+            	border-color: #969696;    
+	    }
+	    input[name="title"]:hover {
+		box-shadow: 0 0 2px 0px #020202;
+            	border-color: #969696;    
+	    }
 	    textarea[name="content"] {
                 height: 100px;
     	    	width: 500px;
@@ -42,6 +58,10 @@
             	box-shadow: 0 0 2px 0px #020202;
             	border-color: #969696;
             }
+	    textarea[name="content"]:hover {
+		box-shadow: 0 0 2px 0px #020202;
+            	border-color: #969696;
+	    }
             .ohhecc {
             	background-color: lightgrey;
             	text-align: center;
@@ -172,9 +192,9 @@
 		</div>
         <form class="forme" action="https://dusterthefirst.ddns.net:32123" method="POST">
             <input type="text" name="tag" placeholder="Jeff#8216" required readonly style="border: none; background: transparent">
-            <input type="text" name="title" placeholder="Title" required>
+            <input type="text" autocomplete="off" name="title" placeholder="Title" required>
             <br>
-            <textarea type="text" name="content" placeholder="Suggestions or something like dat." required></textarea>
+            <textarea type="text" autocomplete="off" name="content" placeholder="Suggestions or something like dat." required></textarea>
             <br>
             <input type="submit" name="submit" value="Send">
             <input type="reset" name="reset" value="Clear">
