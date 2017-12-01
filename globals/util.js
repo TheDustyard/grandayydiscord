@@ -20,7 +20,7 @@ function getGetParamsFromHash() {
 function setCookie(cname, cvalue, exms) {
     var d = new Date();
     d.setTime(d.getTime() + exms);
-    var expires = "expires="+ d.toUTCString();
+    var expires = "expires=" + d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
@@ -32,7 +32,7 @@ function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
     var ca = decodedCookie.split(';');
-    for(var i = 0; i <ca.length; i++) {
+    for (var i = 0; i < ca.length; i++) {
         var c = ca[i];
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
@@ -51,11 +51,11 @@ function getCookie(cname) {
  */
 function GET(theUrl, callback) {
     var xmlHttp = new XMLHttpRequest();
-    xmlHttp.onreadystatechange = () =>  { 
+    xmlHttp.onreadystatechange = () => {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
             callback(xmlHttp.responseText);
     }
-    xmlHttp.open("GET", theUrl, true); 
+    xmlHttp.open("GET", theUrl, true);
     xmlHttp.send();
 }
 
@@ -66,11 +66,11 @@ function GET(theUrl, callback) {
  */
 function GETJSON(theUrl, callback) {
     var xmlHttp = new XMLHttpRequest();
-    xmlHttp.onreadystatechange = () =>  { 
+    xmlHttp.onreadystatechange = () => {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
             callback(JSON.parse(xmlHttp.responseText));
     }
-    xmlHttp.open("GET", theUrl, true); 
+    xmlHttp.open("GET", theUrl, true);
     xmlHttp.send();
 }
 
@@ -81,11 +81,11 @@ function GETJSON(theUrl, callback) {
  */
 function GETHTML(theUrl, callback) {
     var xmlHttp = new XMLHttpRequest();
-    xmlHttp.onreadystatechange = () =>  { 
+    xmlHttp.onreadystatechange = () => {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
             callback(new DOMParser().parseFromString(xmlHttp.responseText, "text/html"));
     }
-    xmlHttp.open("GET", theUrl, true); 
+    xmlHttp.open("GET", theUrl, true);
     xmlHttp.send();
 }
 
@@ -95,7 +95,7 @@ function GETHTML(theUrl, callback) {
  */
 function injectCSS(theUrl) {
     var xmlHttp = new XMLHttpRequest();
-    xmlHttp.onreadystatechange = () =>  { 
+    xmlHttp.onreadystatechange = () => {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             let link = document.createElement('link');
             link.setAttribute('rel', 'stylesheet');
@@ -103,7 +103,7 @@ function injectCSS(theUrl) {
             document.head.appendChild(link);
         }
     }
-    xmlHttp.open("GET", theUrl, true); 
+    xmlHttp.open("GET", theUrl, true);
     xmlHttp.send();
 }
 

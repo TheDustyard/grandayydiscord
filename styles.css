@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: auto;
@@ -53,9 +53,11 @@ header {
     font-size: 15px;
     margin: 0px 10px;
 }
+
 .searchbar:focus {
     outline: none;
 }
+
 .searchbar::placeholder {
     color: rgb(100, 100, 100);
 }
@@ -64,6 +66,7 @@ header {
     vertical-align: middle;
     border-radius: 10px;
 }
+
 .opendropdown {
     height: auto;
     cursor: default;
@@ -84,14 +87,21 @@ header {
 }
 
 header {
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
+
 header a {
     display: inline-block;
     padding: 0px 10px;
@@ -99,10 +109,12 @@ header a {
     text-decoration: none;
     color: black;
 }
+
 header a:hover {
     /* background-color: black; */
     color: rgb(133, 133, 133);
 }
+
 .dropdown {
     display: none;
     position: absolute;
@@ -115,10 +127,12 @@ header a:hover {
     box-shadow: 2px 2px 4px gray;
     font-size: 14px;
 }
+
 .dropdown::before {
     content: " ";
     position: absolute;
-    top: 0; /* At the bottom of the tooltip */
+    top: 0;
+    /* At the bottom of the tooltip */
     right: 25px;
     transform: translateY(-110%);
     margin-left: -5px;
@@ -126,35 +140,43 @@ header a:hover {
     border-style: solid;
     border-color: transparent transparent gray transparent;
 }
+
 .dropdown.show {
     display: block;
 }
+
 .dropdown a {
     display: block;
     text-decoration: none;
     color: black;
     padding: 10px 20px;
 }
+
 .dropdown a:hover {
     color: white;
     background-color: black;
 }
+
 .dropdown hr {
     border-top: 1px solid gray;
 }
+
 .dropdown .user .discsmall {
     font-size: .7em;
     color: gray;
 }
+
 .signedinas {
     color: gray;
     margin: 0px 20px 5px;
 }
+
 .dropdown .user {
     font-weight: 600;
     margin: 0px 20px;
     white-space: nowrap;
 }
+
 a.loginbutton {
     color: white;
     display: inline;
@@ -162,6 +184,7 @@ a.loginbutton {
     border-radius: 10px;
     padding: 5px 15px;
 }
+
 a.loginbutton:hover {
     background: rgb(114, 114, 114);
     color: white;
@@ -174,6 +197,7 @@ a.loginbutton:hover {
 .left {
     float: left;
 }
+
 .right {
     float: right;
 }
@@ -181,6 +205,7 @@ a.loginbutton:hover {
 .loggedin {
     display: none;
 }
+
 .loggedout {
     display: block;
 }

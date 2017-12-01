@@ -162,6 +162,7 @@ a {
     top: 50px;
     left: 300px;
     width: calc(100% - 400px);
+    white-space: nowrap;
 }
 
 .usernameinfo .hoistrole {
@@ -201,10 +202,10 @@ a {
 
 .usernameinfo .nickname {
     font-weight: bold;
-    font-size: 35px;
+    font-size: 32px;
 }
 
-.usernameinfo .bot {
+.usernameinfo .nickname .bot {
     background-color: #7289da;
     border-radius: 6px;
     color: #ffffff;
@@ -222,7 +223,7 @@ a {
 }
 .usernameinfo .tag .username {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 15px;
 }
 .usernameinfo .tag .discriminator {
     color: gray;

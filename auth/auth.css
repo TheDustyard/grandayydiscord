@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:500');
-html, body {
+html,
+body {
     font-family: 'Quicksand', sans-serif;
     animation-name: fadeincolorload;
     animation-duration: 4s;
@@ -15,12 +16,14 @@ html, body {
     user-select: none;
     cursor: default;
 }
+
 .loggingin {
     padding: 17% 0;
     border: none;
     text-align: center;
     font-size: 140%;
 }
+
 @keyframes fadeincolorload {
     0% {
         background-color: #010423;

@@ -1,70 +1,90 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <!-- COMMON -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8">
-        <!-- STYLES -->
-        <link rel="stylesheet" href="/pages/profile/styles.css">
-        <link rel="stylesheet" href="/pages/profile/stylesm.css" media="only screen and (max-width: 1020px)">
-        <!-- PROFILE SCROLLER -->
-        <script src="profilescroller.js"></script>
-    </head>
+<head>
+    <!-- COMMON -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <!-- STYLES -->
+    <link rel="stylesheet" href="/pages/profile/styles.css">
+    <link rel="stylesheet" href="/pages/profile/stylesm.css" media="only screen and (max-width: 1020px)">
+    <!-- UTILS -->
+    <script src="/globals/util.js"></script>
+    <!-- PROFILE SCROLLER -->
+    <script src="profilescroller.js"></script>
+    <!-- BACKGROUND LOADER -->
+    <script src="backgroundloader.js"></script>
+</head>
 
-    <body>
-        <div class="profile">
-            <div class="pfp">
-                <img class="picture" draggable="false" width="200px" src="https://cdn.discordapp.com/avatars/202911530843373568/57d4758d62209f607d85cde4dfe59442.png">
-                <div class="circle dnd"></div>
-                <div class="roles">
-                    <div class="tag">
-                        <span class="username">12345678901234567890123456789012</span><span class="discriminator">#0000</span>
-                    </div>
-                    <hr>
-                    <a href="#/search?role=idofrole" style="background-color:#5a9bec">Content Cop</a>
-                    <a href="#/search?role=idofrole" style="background-color:#8efa06">Vsauce</a>
-                    <a href="#/search?role=idofrole" style="background-color:#cece16">Jake Pauler</a>
-                    <a href="#/search?role=idofrole" style="background-color:#ffb22a">Pirate</a>
-                    <a href="#/search?role=idofrole" style="background-color:#11806a">Memewar Champion</a>
-                    <a href="#/search?role=idofrole" style="background-color:#7d0061">All Star</a>
-                    <a href="#/search?role=idofrole" style="background-color:#9b59b6">Enlisted</a>
-                </div>
-            </div>
-            <div class="usernameinfo">
-                <div class="backbar">
-                    <span class="hoistrole" style="color: #5a9bec">Content Cop</span>
-                </div>
-                <span class="nickname"><span>12345678901234567890123456789012</span><span class="bot">BOT</span></span>
+<body>
+    <div class="profile">
+        <div class="pfp">
+            <img class="picture" draggable="false" width="200px" src="https://cdn.discordapp.com/avatars/202911530843373568/57d4758d62209f607d85cde4dfe59442.png">
+            <div class="circle dnd"></div>
+            <div class="roles">
                 <div class="tag">
-                    <span class="username">12345678901234567890123456789012</span><span class="discriminator">#7622</span>
+                    <span class="username">12345678901234567890123456789012</span>
+                    <span class="discriminator">#0000</span>
                 </div>
-                <div class="playing">
-                    <div class="ban">BANNED</div>
-                    <!-- Playing: <span class="game">PUBG</span> -->
-                </div>
-                <div class="joined">Joined: <span>Wed, Oct 11, 2017</span></div>
-                <div class="level">Level: <a href="#/search?level=30" style="color: #8efa06">30</a></div>
-                <div class="warns">Warnings: <a href="#/search?id=fatalerrorsid&page=warnings">6000000</a></div>
-            </div>
-            <div class="content">
-                <!-- EDIT BUTTON -->
-                <h1>EDIT BUTTON</h1>
-                <div class="backbar">
-                    <span>Bio</span>
-                </div>
-                <div class="bio">aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<br><br><br><br><br><br><br><br><br> I NEED TO BE DEOPRTED, I KEEP STEALING ALL OF DUSTER'S JOBS</div>
-                <div class="backbar">
-                    <span>Extra Info</span>
-                </div>
-                <div class="info">
-                    <span class="name">Birthday:</span> December 54th<br>
-                    <span class="name">Country:</span> Not USA<br>
-                    <span class="name">Timezone:</span> UTC +1000:00<br>
-                    <span class="name">Website:</span> <a href="https://aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com" external>https://aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com</a><br>
-                </div>
+                <hr>
+                <a href="#/search?role=idofrole" style="background-color:#5a9bec">Content Cop</a>
+                <a href="#/search?role=idofrole" style="background-color:#8efa06">Vsauce</a>
+                <a href="#/search?role=idofrole" style="background-color:#cece16">Jake Pauler</a>
+                <a href="#/search?role=idofrole" style="background-color:#ffb22a">Pirate</a>
+                <a href="#/search?role=idofrole" style="background-color:#11806a">Memewar Champion</a>
+                <a href="#/search?role=idofrole" style="background-color:#7d0061">All Star</a>
+                <a href="#/search?role=idofrole" style="background-color:#9b59b6">Enlisted</a>
             </div>
         </div>
-    </body>
+        <div class="usernameinfo">
+            <div class="backbar">
+                <span class="hoistrole" style="color: #5a9bec">Content Cop</span>
+            </div>
+            <span class="nickname">
+                <span>12345678901234567890123456789012</span>
+                <span class="bot">BOT</span>
+            </span>
+            <div class="tag">
+                <span class="username">12345678901234567890123456789012</span>
+                <span class="discriminator">#7622</span>
+            </div>
+            <div class="playing">
+                <div class="ban">BANNED</div>
+                <!-- Playing: <span class="game">PUBG</span> -->
+            </div>
+            <div class="joined">Joined:
+                <span>Wed, Oct 11, 2017</span>
+            </div>
+            <div class="level">Level:
+                <a href="#/search?level=30" style="color: #8efa06">30</a>
+            </div>
+            <div class="warns">Warnings:
+                <a href="#/search?id=fatalerrorsid&page=warnings">6000000</a>
+            </div>
+        </div>
+        <div class="content">
+            <!-- EDIT BUTTON -->
+            <h1>EDIT BUTTON</h1>
+            <div class="backbar">
+                <span>Bio</span>
+            </div>
+            <div class="bio">300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300300</div>
+            <div class="backbar">
+                <span>Extra Info</span>
+            </div>
+            <div class="info">
+                <span class="name">Birthday:</span> December 54th
+                <br>
+                <span class="name">Country:</span> Not USA
+                <br>
+                <span class="name">Timezone:</span> UTC +1000:00
+                <br>
+                <span class="name">Website:</span>
+                <a href="https://aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com" external>https://aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com</a>
+                <br>
+            </div>
+        </div>
+    </div>
+</body>
 
 </html>
