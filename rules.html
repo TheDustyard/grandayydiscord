@@ -12,9 +12,11 @@
         <div id="headerspacer" class="desktop">&nbsp;</div>
         <div id="headerspacer" class="mobile">&nbsp;</div>
         <script>$("#header").load('/header.html');</script>
-        
-        <h1>Server Rules</h1>
-        
+        <h1 class="rules">Server Rules</h1>
+        <div class="alert">
+        <span class="closebtn">&times;</span>  
+        This website is startin to get out of date. We will soon change this website to a nicer one. <a class="a" draggable="false" href="https://github.com/grandayy/grandayy.github.io/tree/dev">Click here</a> to see the current progress.
+        </div>
         <ol class="rules">
             <li>
                 No racial intolerance or extreme hate speech of any kind is allowed in this server.
@@ -109,7 +111,11 @@
             <br>
             <br>
             <h3>The bot wont respond to me!!!</h3>
-            Contact a <a class="Villain" href="roles.html#Villian">Villain</a>
+            Contact a <a draggable="false" class="Villain" href="roles.html#Villian">Villain</a>
+            <br>
+            <br>
+            <h3>I'm on mobile and I want to be apart of a memewar but I can't dm them via the app!</h3>
+            Send your avatar in #pics-advertise-vids and mention the hoster or do t!avatar in #botcommands and mention the hoster.
         </div> -->
         
         <hr>
@@ -128,14 +134,29 @@
             </p>
 
         <!-- <p>
-            Also, if you have any suggestions/questions about the server, DM the <a class="Villain" href="roles.html#Villian">Villains</a> instead of grandayy, we will always read DM's.
+            Also, if you have any suggestions/questions about the server, DM the <a draggable="false" class="Villain" href="roles.html#Villian">Villains</a> instead of grandayy, we will always read DM's.
         </p> -->
 
         <p>
-            <a href="https://discordapp.com/terms">Discord ToS Apply here aswell</a><br>
-            <a href="https://discordapp.com/guidelines">So do the guidelines</a><br>
-            <a href="/roles.html">Info On Roles</a>
+                do not go into discussion with staff after getting warned, if you think the warn was invalid please resolve this issue in dm's with the person that warned
         </p>
-        
+
+        <p>
+            <a draggable="false" href="https://discordapp.com/terms">The Discord Term's of Service applies to all servers including this one.</a><br>
+            <a draggable="false" href="https://discordapp.com/guidelines">So do the guidelines.</a><br>
+            <a draggable="false" href="/roles.html">Information on roles.</a>
+        </p>
+                <script>
+            var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+    close[i].onclick = function(){
+        var div = this.parentElement;
+        div.style.opacity = "0";
+        setTimeout(function(){ div.style.display = "none"; }, 600);
+    }
+}
+        </script>
     </body>
 </html> 

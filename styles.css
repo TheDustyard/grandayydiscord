@@ -1,17 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:500');
 html, body{
+    font-family: 'Quicksand', sans-serif;
     margin: 0px 0px 10px 0px;
     text-rendering: optimizeLegibility;
+    transition: 0.2s ease;
+}
+.alert {
+    top: 47px;
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    position: sticky;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.a {
+    color: #7fb6ff;
+    transition: 0.3s;
+}
+.a:hover {
+    color: #63a6ff;
+    text-decoration: underline;
+}
+.a:active {
+    color: #4d97f9;
+}
+.closebtn:hover {
+    color: #eaeaea;
+}
+.closebtn:active {
+    color: #e5e5e5;
+}
+a {
+    text-decoration: none;
 }
 
 h1 {
+    font-family: 'Pacifico', cursive;
     background-color: #23272A;
     text-align: center;
     color: #e5e6e6;
     padding: 40px;
     font-size: 3em;
     margin: 0;
+    text-shadow: 1px 1px #23272A;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
 }
-
+h1.index {
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: 100%;
+    background-image: url("https://i1.sndcdn.com/avatars-000283354129-5s27v3-t500x500.jpg");
+	background-position: center;
+}
+h1.rules {
+	background-repeat: no-repeat;
+    background-image: url("https://i.ytimg.com/vi/cXdDxytmhJI/maxresdefault.jpg");
+    background-attachment: fixed;
+	background-size: 100%;
+	background-position: center;
+}
+@media only screen and (max-width: 1368px) {
+h1 {
+    background-size: 250%;
+}
+}
 h2, h3, h4, h5, h6{
     text-align: center;
 }
@@ -72,8 +149,12 @@ p {
     color: #cf9346;
 }
 
-.Net {
+.ContentCop {
     color: #3498DB;
+}
+
+.ContentInspector {
+    color: #ff0061;
 }
 
 .Stingy {
@@ -94,6 +175,10 @@ p {
 
 .First {
     color: #d7342a;
+}
+
+.BigBen {
+    color: #ffa000;
 }
 
 .LAMBSAUCEEEE {

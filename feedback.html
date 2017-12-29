@@ -2,7 +2,6 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Grandayy's Discord Feedback</title>
         <link rel="stylesheet" href="/styles.css">
         <link rel="icon" href="/favicon.png">
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -11,8 +10,7 @@
                 text-align: center;
                 padding: 10px;
                 margin-top: 10px;
-                display: inline-block;
-
+                display: none;
                 position: absolute;
                 left: 50%;
                 transform: translateX(-50%);
@@ -22,16 +20,157 @@
                 display: inline-block;
                 margin: 10px 0px;
                 width: calc(100% - 170px);
+		font-family: 'arial', sans-serif;
             }
             input[name="tag"] {
                 width: 150px;
                 display: inline-block;
+		font-family: 'arial', sans-serif;
+		transition: 0.2s ease;
             }
-            textarea[name="content"] {
+	    input[name="title"] {
+		border: 1px solid;
+    		padding-left: 2px;
+    		border-radius: 3px;
+		transition: 0.2s ease;
+		outline: none;
+ 		border-color: #cecece;
+	    }
+	    input[name="title"]:focus {
+		box-shadow: 0 0 2px 0px #020202;
+            	border-color: #969696;    
+	    }
+	    input[name="title"]:hover {
+		box-shadow: 0 0 2px 0px #020202;
+            	border-color: #969696;    
+	    }
+	    textarea[name="content"] {
                 height: 100px;
-                width: 500px;
-                resize: none;
+    	    	width: 500px;
+    	    	resize: none;
+    	    	font-family: 'arial', sans-serif;
+            	box-shadow: none;
+		transition: 0.2s ease;
+            	outline: none;
+            	border-radius: 3px;
+            	border-color: #cecece;
             }
+            textarea[name="content"]:focus {
+            	box-shadow: 0 0 2px 0px #020202;
+            	border-color: #969696;
+            }
+	    textarea[name="content"]:hover {
+		box-shadow: 0 0 2px 0px #020202;
+            	border-color: #969696;
+	    }
+            .ohhecc {
+            	background-color: lightgrey;
+            	text-align: center;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: 0;
+		-webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                cursor: default;
+            }
+            .fancybutton {
+            	background-color: #474747;
+            	border: none;
+            	color: white;
+            	padding: 5px 20px 9px 20px;
+            	text-align: center;
+            	text-decoration: none;
+            	display: inline-block;
+            	font-size: 30px;
+            	margin: 2px 2px;
+            	border-radius: 5px;
+            	cursor: pointer;
+            	transition: background-color 0.2s ease;
+            }
+            .fancybutton:hover {
+            	background-color: #333333;
+            	transition: background-color 0.2s ease;
+            }
+            .fancybutton:active {
+            	background-color: #161616;
+            	transition: background-color 0.2s ease;
+            }
+		input[type="submit"] {
+		    padding: 10px;
+    		    background-color: #777777;
+    		    border: none;
+                    border-radius: 5px 0px 0px 5px;
+                    cursor: pointer;
+                    color: white;
+		    outline: none;
+		    transition: 0.2s ease;
+		}
+		input[type="submit"]:hover {
+		    background-color: #565656;
+		    box-shadow: 0 0 3px #484848;
+		}
+		input[type="submit"]:active {
+		    background-color: #3a3939;
+		    box-shadow: 0 0 8px 1px #3a3939;
+		}
+		input[type="reset"] {
+		    padding: 10px;
+    		    background-color: #777777;
+    		    border: none;
+                    border-radius: 0px 5px 5px 0px;
+                    cursor: pointer;
+                    color: white;
+		    outline: none;
+		    transition: 0.2s ease;
+		}
+		input[type="reset"]:hover {
+		    background-color: #565656;
+		    box-shadow: 0 0 3px #484848;
+		}
+		input[type="reset"]:active {
+		    background-color: #3a3939;
+		    box-shadow: 0 0 8px 1px #3a3939;
+		}
+            @media screen and (max-width: 768px) {
+		input[name="tag"] {
+		  display: none;
+		}
+		input[name="title"] {
+		   display: inline-block;
+   		   font-family: 'arial', sans-serif;
+    		   width: 95%;
+ 		   left: 2px;
+ 		   position: relative;
+		}
+		textarea[name="content"] {
+   		  height: 100px;
+    		  resize: none;
+    		  font-family: 'arial', sans-serif;
+   		  box-shadow: none;
+   		  transition: 0.2s ease;
+    		  outline: none;
+    		  border-radius: 3px;
+    		  border-color: #cecece;
+    		  width: 95%;
+    		  margin: auto;
+    		  display: block;
+		}
+		form {
+		  width: 90%;
+		}
+            }
+	    .forme {
+	      z-index: 1;
+	     }
         </style>
     </head>
     <body id="body">
@@ -41,29 +180,50 @@
         <script>$("#header").load('/header.html');</script>
         
         <h1>Feedback</h1>
-        
-        <form action="https://dusterthefirst.ddns.net:32123" method="POST">
-            <input type="text" name="tag" placeholder="TAG#000" required readonly style="border: none; background: transparent">
-            <input type="text" name="title" placeholder="Title" required>
+	    <div class="alert">
+        <span class="closebtn">&times;</span>  
+        This website is startin to get out of date. We will soon change this website to a nicer one. <a class="a" draggable="false" href="https://github.com/grandayy/grandayy.github.io/tree/dev">Click here</a> to see the current progress.
+        </div>
+                <div class="ohhecc">
+            <h2 style="font-size:70px;">Oh hecc :/</h2>
+            <h2>You must login to submit dat feedback der.</h1>
+            <p><i>Btw if ya on mobile, I suggest for ya to contact a <a draggable="false" class="Villain" href="roles.html#Villian">Villain</a>, you criminal scum.</i></p> 
+            <a class="fancybutton" draggable="false" href="https://discordapp.com/oauth2/authorize?response_type=token&client_id=307231810218360832&scope=identify&redirect_uri=https://grandayy.github.io/auth.html">Login</a>
+		</div>
+        <form class="forme" action="https://dusterthefirst.ddns.net:32123" method="POST">
+            <input type="text" name="tag" placeholder="Jeff#8216" required readonly style="border: none; background: transparent">
+            <input type="text" autocomplete="off" name="title" placeholder="Title" required>
             <br>
-            <textarea type="text" name="content" placeholder="Your woes" required></textarea>
+            <textarea type="text" autocomplete="off" name="content" placeholder="Give us de feedback." required></textarea>
             <br>
             <input type="submit" name="submit" value="Send">
             <input type="reset" name="reset" value="Clear">
         </form>
     </body>
     <script>
+	    var close = document.getElementsByClassName("closebtn");
+var i;
+for (i = 0; i < close.length; i++) {
+    close[i].onclick = function(){
+        var div = this.parentElement;
+        div.style.opacity = "0";
+        setTimeout(function(){ div.style.display = "none"; }, 600);
+    }
+}
         let user = JSON.parse(getCookie('user'));
         if (user) {
-            document.getElementsByName('tag')[0].value = user.username + "#" + user.discriminator;
+			document.getElementsByClassName('ohhecc')[0].style.display = 'none';
+		document.body.style.backgroundColor = "white";
+		document.title = "Send us Feedback!"
+            document.getElementsByClassName('forme')[0].style.display = 'inline-block';
+            document.getElementsByName('tag')[0].value = 
+                user.username + "#" + user.discriminator;
         } else {
-            document.getElementsByName('title')[0].disabled = true;
-            document.getElementsByName('content')[0].disabled = true;
-            document.getElementsByName('submit')[0].disabled = true;
-            document.getElementsByName('reset')[0].disabled = true;
-            document.getElementsByName('content')[0].value = "LOGIN TO SUBMIT FEEDBACK";
+            document.getElementsByClassName('forme')[0].style.display = 'none';
+            document.getElementsByClassName('ohhecc')[0].style.display = 'inline-block';
+            document.body.style.backgroundColor = "lightgrey";
+	    document.title = "You must signin :3"
         }
-
         function getCookie(cname) {
             var name = cname + "=";
             var decodedCookie = decodeURIComponent(document.cookie);

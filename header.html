@@ -1,17 +1,34 @@
 <link rel="stylesheet" type="text/css" href="https://dusterthefirst.github.io/res/include/header.css">
+<style>
+a, #userid {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    }
+.desktop li {
+    transition: 0.2s ease;
+    }
+.mobile li {
+    transition: 0.2s ease;
+    }
+</style>
 <div class="desktop">
     <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/rules.html">Server Rules</a></li>
-        <li><a href="/staffrules.html">Staff Rules</a></li>
-        <li><a href="/roles.html">Roles</a></li>
-        <li><a href="/feedback.html">Feedback</a></li>
+        <li><a draggable="false" href="/index.html">Home</a></li>
+        <li><a draggable="false" href="/rules.html">Server Rules</a></li>
+        <li><a draggable="false" href="/staffrules.html">Staff Rules</a></li>
+        <li><a draggable="false" href="/roles.html">Roles</a></li>
+        <li><a draggable="false" href="/feedback.html">Feedback</a></li>
         <li style="float: right">
             <div id="login">
-                <a href="https://discordapp.com/oauth2/authorize?response_type=token&client_id=307231810218360832&scope=identify&redirect_uri=https://grandayy.github.io/auth.html">Login</a>                    
+                <a draggable="false" href="https://discordapp.com/oauth2/authorize?response_type=token&client_id=307231810218360832&scope=identify&redirect_uri=https://grandayy.github.io/auth.html">Login</a>                    
             </div>
             <div id="logout" style="display: none">
-                <a onclick="logout()" style="display: inline-block;">Logout</a>
+                <a draggable="false" onclick="logout()" style="display: inline-block;cursor: pointer;">Logout</a>
                 <span id="userid" style="font-size: 1.2em; margin-right: 10px;"></span>                                        
             </div>
         </li>
@@ -21,11 +38,11 @@
     <div id="menu">
         <div id="drpbtn" onclick="openMenu()">&#9776;</div>
         <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/rules.html">Server Rules</a></li>
-            <li><a href="/staffrules.html">Staff Rules</a></li>
-            <li><a href="/roles.html">Roles</a></li>
-            <li><a href="/feedback.html">Feedback</a></li>
+            <li><a draggable="false" href="/index.html">Home</a></li>
+            <li><a draggable="false" href="/rules.html">Server Rules</a></li>
+            <li><a draggable="false" href="/staffrules.html">Staff Rules</a></li>
+            <li><a draggable="false" href="/roles.html">Roles</a></li>
+            <li><a draggable="false" href="/feedback.html">Feedback</a></li>
         </ul>
     </div>
 </div>
