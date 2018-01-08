@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<head>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/media/logo.png">
+  <title>Grandayy Memecup</title>
+  <!-- <meta http-equiv="refresh" content="0; url=stream.html" /> for when stream starts-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+   $(".faq").hide();
+   $(".htsignup").hide();
+   $(".hero").show();
+   $(".herovideo").show();
+    $("#faq").click(function(){
+     $(".herovideo").animate({
+     opacity: '0',
+     top: '-100%',
+     display: 'none',
+   }, "slow");
+     $(".hero").animate({
+     opacity: '0',
+     top: '-100%',
+     display: 'none',
+     });
+     $(".faq").animate({
+     opacity: '1',
+     top: '-0',
+     display: 'block',
+     });
+     $(".faq").show();
+     $(".htsignup").hide();
+     $(".herovideo").hide();
+     $(".hero").hide();
+    });
+    $("#htsignup").click(function(){
+     $(".herovideo").animate({
+     opacity: '0',
+     top: '-100%',
+     display: 'none',
+   }, "slow");
+     $(".hero").animate({
+     opacity: '0',
+     top: '-100%',
+     display: 'none',
+     });
+     $(".htsignup").animate({
+     opacity: '1',
+     top: '-0',
+     display: 'block',
+     });
+     $(".htsignup").show();
+     $(".faq").hide();
+     $(".herovideo").hide();
+     $(".hero").hide();
+    });
+    $("#home").click(function(){
+     $(".herovideo").animate({
+     opacity: '1',
+     top: '0px',
+     display: 'block',
+   }, "slow");
+     $(".hero").animate({
+     opacity: '1',
+     top: '0px',
+     display: 'block',
+     });
+     $(".faq").animate({
+     opacity: '0',
+     top: '-600px',
+     display: 'none',
+     });
+     $(".htsignup").animate({
+     opacity: '0',
+     top: '-600px',
+     display: 'none',
+     });
+     $(".herovideo").show();
+     $(".hero").show();
+     $(".htsignup").hide();
+     $(".faq").hide();
+    });
+   });
+  </script>
+</head>
+<body>
+  <header>
+    <nav class="main">
+      <a draggable="false" id="home" href="#home">Home</a>
+      <a draggable="false" id="htsignup" href="#htsignup">How to sign up</a>
+      <a draggable="false" id="faq" href="#faq">FAQ</a>
+      <div class="navright">
+        <a draggable="false" href="#">Sign Up</a>
+      </div>
+    </nav>
+  </header>
+  <video loop muted autoplay poster="assets/media/logo.png" class="herovideo">
+    <source src="assets/media/herovideo.mp4" type="video/mp4">
+    </video>
+<div class="hero">
+  <img class="herologo" draggable="false" src="assets/media/logo.png">
+  <a draggable="false" href="#">Sign Up</a><br class="mobilestuffino"><br class="mobilestuffino">
+  <a draggable="false" href="#">Learn More</a>
+</div>
+<iframe class="faq" height="100%" style="left:0;position: absolute;border:none;width:100%;top:-0;opacity:0;display:none" src="404.html">
+</iframe>
+<iframe class="htsignup" height="100%" style="left:0;position: absolute;border:none;width:100%;top:-0;opacity:0;display:none" src="htsignup.html">
+</iframe>
+</body>
+</html>

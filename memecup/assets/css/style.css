@@ -1,0 +1,505 @@
+/* Text Fonts */
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Hind+Madurai:700');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:500');
+
+/* font-family: 'Pacifico', cursive; (this is for headers btw like "why should I join the memecup") */
+
+/* The coding starts here. */
+
+html, body {
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  right: 0;
+ 	padding: 0;
+ 	margin: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: all 0.2s ease !important;
+}
+
+.livecircle {
+  display: inline-block;
+  background-color: #db0d0d;
+  width: 25px;
+  height: 25px;
+  margin-bottom: -3px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 100%;
+  animation: redlive 4s ease infinite;
+  box-shadow: inset 0 0 3px #610000;
+}
+.streamhead {
+  position: fixed;
+  top: -48px;
+  transition: 0.7s ease;
+  box-shadow: 0 0 5px rgba(35, 35, 35, 0.7);
+  background-color: rgba(35, 35, 35, 0.95);
+}
+
+.streamhead:hover {
+  color: white;
+  top: 0px;
+  background-color: rgba(51, 51, 51, 0.8);
+}
+.streamhead:hover a {
+  color: white;
+}
+.streamhead a {
+  color: white;
+  border-right: 1px white solid;
+}
+nav {
+  background-color: white;
+  width: 100%;
+  z-index: 200;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+  box-shadow: 0 0 5px black;
+  transition: 0.2s ease;
+}
+
+.streamnav {
+  padding-bottom: 20px;
+}
+
+.streamnav:hover {
+  color: white;
+  padding-bottom: 7px;
+}
+nav a {
+  font-weight: 700;
+  color: black;
+  padding: 5px;
+  font-size: 30px;
+  padding-left: 1px;
+  text-decoration: none;
+  border-right: 1px #dbdbdb solid;
+}
+
+.navright {
+  float: right;
+  padding-right: 15px;
+  border: none;
+}
+
+.navright a {
+  border: none;
+  background-color: grey;
+  padding: 3px;
+  margin-top: -2px;
+  border-radius: 4px;
+  background-color: #424242;
+  box-shadow: none;
+  transition: 0.2s ease;
+  color: white;
+  margin-right: -8px;
+}
+
+.ileft {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.i {
+  border: solid white;
+  border-width: 0 7px 7px 0;
+  display: inline-block;
+  padding: 7px;
+  margin-left: 7px;
+  margin-right: -7px;
+  transition: 0.2s ease;
+}
+
+.navright a:hover {
+  box-shadow: inset 0 0 3px black;
+  background-color: #323232;
+}
+
+.navright a:active {
+  background-color: #282828;
+  box-shadow: inset 0 0 9px black;
+}
+
+.herovideo {
+  z-index: 0;
+  position: fixed;
+  top: -0px;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.hero {
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 400px rgba(0,0,0,0.8) inset;
+  padding-top: 10%;
+  bottom: 0;
+}
+footer {
+  padding: 5px;
+  font-size: 30px;
+  background-color: #eee;
+  color: #2b2b2b;
+  font-weight: 700;
+  font-family: 'Quicksand', sans-serif;
+}
+.leaderboard {
+    border-spacing: 0;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    background-color: #3f3f3f;
+    border: none;
+}
+
+th {
+   background-color: #161616;
+}
+.main {
+  display: inline-block;
+  opacity: 1;
+  transition: 0.2s ease;
+}
+.leaderboard th, td {
+    padding: 8px;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 20px;
+}
+
+.yeses {
+  border-right: 2px solid #686868;
+}
+
+.leaderboard tr:nth-child(even){background-color: #262626}
+
+.hero a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Hind Madurai', sans-serif;
+  border: 4px white solid;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 0.5px;
+  font-size: 35px;
+  margin-left: 12px;
+  margin-right: 12px;
+  transition: 0.3s ease;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.hero a:hover {
+  transition: 0.5s ease;
+  background-color: rgba(0,0,0, 0.5);
+  box-shadow: 0 0 5px black;
+  text-shadow: 0 0 5px black;
+}
+
+.hero a:active {
+  transition: 0.3s ease;
+  background-color: rgba(0,0,0, 0.8);
+  box-shadow: 0px 0px 11px black;
+  text-shadow: 0 0 9px black;
+}
+
+#goback {
+  text-decoration: none;
+  color: white;
+  font-family: 'Hind Madurai', sans-serif;
+  border: 4px white solid;
+  padding-top: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 30px;
+  transition: 0.3s ease;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#goback:hover {
+  transition: 0.5s ease;
+  background-color: rgba(0,0,0, 0.5);
+  box-shadow: 0 0 5px black;
+  text-shadow: 0 0 5px black;
+}
+
+#goback:active {
+  transition: 0.3s ease;
+  background-color: rgba(0,0,0, 0.8);
+  box-shadow: 0px 0px 11px black;
+  text-shadow: 0 0 9px black;
+}
+.herologo {
+  display: block;
+  margin: auto;
+  width: 20%;
+  transition: 0.2s ease;
+  margin-bottom: 15px;
+  box-shadow: 0px 0px 7px 0px black;
+  border-radius: 12px;
+}
+.mobilestuffino {
+  display: none;
+}
+.herotitle {
+  font-family: 'Hind Madurai', sans-serif;
+}
+
+
+body {
+    margin: 0;
+}
+/* Create two unequal columns that floats next to each other */
+.column {
+    box-sizing: border-box;
+    float: left;
+    padding: 10px;
+    height: 400px;
+    margin-top: -4px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #191919;
+}
+
+::-webkit-scrollbar
+{
+  transition: 0.5s ease;
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+.left {
+  left: 0;
+  width: 25%;
+}
+
+.right {
+  right: 0;
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.section {
+}
+.sectiontop {
+  margin-top: -23px;
+  background-color: blue;
+  padding-bottom: 0.3px;
+}
+.sectionbody {
+  margin-top: -23px;
+  padding-bottom: 0.1px;
+  background-color: red;
+}
+.sectiontop h1 {
+  font-family: 'Pacifico', cursive;
+  font-weight: 700;
+}
+
+.status {
+  font-size:160px;
+  margin-top:-20px;
+}
+
+.hahayes {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  left: 0;
+}
+.mostkill {
+  font-size:160px;
+  margin-top:-20px;
+}
+
+.ping {
+  font-size:160px;
+  margin-top:-20px;
+}
+
+.left {
+  min-width: 450px;
+}
+.viewers {
+  font-size:160px;
+  margin-top:-20px;
+}
+@media screen and (max-width: 768px) {
+  .mobilestuffino {
+    display: inline-block;
+  }
+  .herovideo {
+    width: 400%;
+  }
+  .herologo {
+    width: 80%;
+    margin-top: 70px;
+  }
+  .players {
+    display: none;
+  }
+  .lead {
+    display: none;
+  }
+  .status {
+    font-size:80px;
+    margin-top:0px;
+  }
+
+  .mostkill {
+    font-size:80px;
+    margin-top:0px;
+  }
+
+  .ping {
+    font-size:80px;
+    margin-top:0px;
+  }
+
+  .viewers {
+    font-size:80px;
+    margin-top:0px;
+  }
+  .left {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .main {
+    display: none;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+
+  .players {
+    display: none;
+  }
+  .lead {
+    display: none;
+  }
+  .status {
+    font-size:80px;
+    margin-top:0px;
+  }
+
+  .mostkill {
+    font-size:80px;
+    margin-top:0px;
+  }
+
+  .ping {
+    font-size:80px;
+    margin-top:0px;
+  }
+
+  .viewers {
+    font-size:80px;
+    margin-top:0px;
+  }
+  .left {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .streamhead {
+    color: white;
+    top: 0px;
+    background-color: rgba(51, 51, 51, 0.8);
+  }
+  .streamhead a {
+    color: white;
+    border-right: 1px white solid;
+  }
+  .streamnav {
+    color: white;
+    padding-bottom: 7px;
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .players {
+    display: none;
+  }
+  .lead {
+    display: none;
+  }
+  .status {
+    font-size:80px;
+    margin-top:0px;
+  }
+
+  .mostkill {
+    font-size:80px;
+    margin-top:0px;
+  }
+
+  .ping {
+    font-size:80px;
+    margin-top:0px;
+  }
+
+  .viewers {
+    font-size:80px;
+    margin-top:0px;
+  }
+  .left {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+
+@keyframes redlive {
+  0% {
+    background-color: #db0d0d;
+  }
+  50% {
+    background-color: #a00404;
+  }
+  100% {
+    background-color: #db0d0d;
+  }
+}
