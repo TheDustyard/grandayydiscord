@@ -14,7 +14,6 @@ html, body {
   top: 0;
   left: 0;
   bottom: 0;
-  height: 100%;
   right: 0;
  	padding: 0;
  	margin: 0;
@@ -265,7 +264,283 @@ th {
   font-family: 'Hind Madurai', sans-serif;
 }
 
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    }
 
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
+    transition: 0.2s ease;
+}
+
+.checkmark2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #eee;
+    border-radius: 50%;
+    transition: 0.2s ease;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #bbb;
+    box-shadow: inset 0 0 3px #6e6e6e;
+}
+
+.container:hover input ~ .checkmark2 {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    transition: 0.2s ease;
+    background-color: #2196F3;
+    box-shadow: inset 0 0 3px #0d64aa;
+}
+
+.container input:checked ~ .checkmark2 {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+#someabove {
+  margin-left: -67.5px;
+  font-size: 18px;
+  position: relative;
+  bottom: 5px;
+  margin-right: 17.5px;
+  display: none;
+  opacity: 0.0;
+  transition: 0.2s ease;
+  z-index: 1;
+}
+#some {
+  z-index: 2;
+}
+#someabove:hover {
+  opacity: 1;
+  bottom: 25px;
+  display: initial;
+  transition: 0.2s ease;
+  animation: hover 0.4s ease;
+}
+#some:hover ~ #someabove {
+  opacity: 1;
+  bottom: 25px;
+  display: initial;
+  transition: 0.2s ease;
+  animation: hover 0.4s ease;
+}
+.ahaa {
+  transition: 1s ease;
+  font-size:120px;
+}
+#output {
+  text-align: left;
+  position:fixed;
+  top:0px;
+  margin-top:-3px;
+  left:0;
+  transition: 0.2s ease;
+}
+.ahaa:active {
+  transition: 0.4s ease;
+  font-size: 140px;
+}
+@keyframes hover {
+  0% {  margin-left: -67.5px;
+    font-size: 18px;
+    position: relative;
+    bottom: 5px;
+    margin-right: 17.5px;
+    display: none;
+    opacity: 0.0;
+    transition: 0.2s ease;}
+    50% {  opacity: 1;
+      bottom: 25px;
+      display: initial;
+      transition: 0.2s ease;}
+}
+.checkmark2:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container input:checked ~ .checkmark2:after {
+    display: block;
+    transition: 0.2s ease;
+}
+.container .checkmark2:after {
+  top: 8px;
+  left: 8px;
+  width: 10px;
+  height: 10px;
+    opacity: 1;
+	border-radius: 100%;
+	background: white;
+    animation: aha2 0.4s linear;
+}
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: inline-block;
+    transition: 0.2s ease;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+opacity: 0.0;
+width: 25px;
+height: 25px;
+left: 0px;
+top: 0px;
+opacity: 0.0;
+	border-radius: 100%;
+	background: white;
+    animation: aha 0.6s ease;
+}
+.form {
+  background-color: #10569d;
+}
+input[name=discorduser] {
+font-family: 'Quicksand', sans-serif;
+outline: none;
+border-radius: 2px;
+border: 1px #aeaeae solid;
+font-size: 15px;
+transition: 0.2s ease;
+}
+input[name=discorduser]:focus {
+border: 1px #858585 solid;
+box-shadow: inset 0 0 1px #000000ba;
+}
+input[name=discorduser]:hover {
+  border: 1px #858585 solid;
+  box-shadow: inset 0 0 1px #000000ba;
+}
+input[type=submit] {
+border-radius: 2px;
+border: none;
+font-size: 25px;
+font-family: 'Rubik', sans-serif;
+background-color: #696969;
+outline: none;
+color: white;
+cursor: pointer;
+transition: 0.2s ease;
+}
+input[type=submit]:hover {
+background-color: #555555;
+}
+input[type=submit]:active {
+background-color: #464646;
+}
+.formhead {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  display: inline-block;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  box-shadow: 0 0 7px #000000a3;
+  background-color: #10569d;
+  color: white;
+  z-index: 3;
+}
+.formreminder {
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  display: inline-block;
+  background-color: #10569d;
+  color: white;
+}
+@keyframes aha {
+0% {
+opacity: 0.0;
+width: 0px;
+height: 0px;
+left: 12.5px;
+top: 12.5px;
+}
+50% {
+opacity: 0.4;
+width: 25px;
+height: 25px;
+left: 0px;
+top: 0.3px;
+}
+100% {
+opacity: 0.0;
+width: 0px;
+height: 0px;
+left: 12.5px;
+top: 12.5px;
+}
+}
+@keyframes aha2 {
+0% {
+opacity: 0.0;
+width: 0px;
+height: 0px;
+left: 13px;
+top: 13px;
+}
+100% {
+ top: 8px;
+  left: 8px;
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+}
+
+.formtop {
+  width: 80%;
+  margin: auto;
+  display: inline-block;
+  text-align: left;
+  padding: 10px;
+  background-color: #eee;
+}
+.formbody {
+  text-align: left;
+  width: 80%;
+  padding: 10px;
+  margin: auto;
+  display: inline-block;
+  background-color: #eee;
+}
 body {
     margin: 0;
 }
@@ -315,7 +590,7 @@ body {
 /* Clear floats after the columns */
 .row:after {
     content: "";
-    display: table;
+    display: ;
     clear: both;
 }
 .section {

@@ -4,19 +4,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="assets/media/live.png">
   <title>Live! | #Memecup</title>
+  <style>html,body{height:100%}</style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("#somegame").hide();
+  $("#stats").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#stat").offset().top
+    }, 2000, "swing");
+});
+$("#map").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#mapp").offset().top
+  }, 2000, "swing");
+});
+$("#some").click(function() {
+  $("#somegame").show();
+  $('html, body').animate({
+      scrollTop: $("#somegamebottom").offset().top
+  }, 3000, "swing");
+});
+});
+</script>
 </head>
 <body>
   <header>
     <nav class="streamhead streamnav">
       <a draggable="false" href="https://twitch.tv/grandayyy"><div class="livecircle"></div>Live</a>
-      <a draggable="false" href="#">Stats</a>
-      <a draggable="false" href="#">Map</a>
+      <a draggable="false" style="cursor:pointer" id="stats">Stats</a>
+      <a draggable="false" style="cursor:pointer" id="map">Map</a>
     </nav>
   </header>
 <iframe height="100%" width="100%" style="left:0;border:none;width:100%;top:0;" src="https://player.twitch.tv/?channel=grandayyy">
 <h1>It seems that your browser does not support Iframes, please <a style="color:black;text-decoration:none;" href="http://outdatedbrowser.com/en">Upgrade</a> your browser or go to <a style="color:black;text-decoration:none;" href="https://twitch.tv/grandayyy">watch the stream.</a></h1>
 </iframe>
-<div class="row">
+<div class="row" id="stat">
 <div class="column left" style="background-color:#6b6b6b;color:white;text-align:center;height:200px;">
   <h1 style="margin-top:-10px;">Server is currently</h1>
   <h1 class="status">Down</h1>
@@ -50,10 +73,15 @@
 </div>
 </div>
 </div>
-<iframe width="100%" height="100%" src="404.html" style="border: none;margin-bottom:-4px;box-shadow: inset 0 0 10px black;"></iframe>
+<iframe width="100%" height="100%" id="mapp" src="404.html" style="border: none;margin-bottom:-4px;box-shadow: inset 0 0 10px black;"></iframe>
 <footer>
-  <h1><a draggable="false" style="text-decoration:none;color:#212121"href="https://twitter.com/search?q=%23memecup"><span style="font-weight:500;color:#383838">#</span>Memecup</a></h1>
-<p>Proudly designed and created by <a style="text-decoration:none;color:#cc8e00" draggable="false" href="#">Pie#9196</a> and some friends.</p>
+  <h1><a draggable="false" style="text-decoration:none;color:#212121" href="https://twitter.com/search?q=%23memecup"><span style="font-weight:500;color:#383838">#</span>Memecup</a></h1>
+<p>Proudly designed and created by <a style="text-decoration:none;color:#cc8e00" draggable="false" href="#">Pie#9196</a> and <a id="some" style="text-decoration:none;color:#383838;cursor:pointer">some</a><span id="someabove"> (huh)</span> friends.</p>
 </footer>
+<div id="somegame" style="height:100%;">
+  <iframe width="100%" height="100%" src="https://embed.vevo.com/?isrc=USAV70400002" style="border: none;margin-bottom:-4px;"></iframe>
+  <div id="somegamebottom" style="height:0;">
+  </div>
+</div>
 </body>
 </html>

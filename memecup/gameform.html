@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<head>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select the game! | #Memecup</title>
+  <style>html,body{background-color: #eee;height:100%}</style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("#somegame").hide();
+  $("#some").click(function() {
+    $("#somegame").show();
+    $('html, body').animate({
+        scrollTop: $("#somegamebottom").offset().top
+    }, 3000, "swing");
+  });
+});
+  </script>
+</head>
+<body>
+  <form action="https://dusterthefirst.ddns.net:8080/memecup/submit" method="POST">
+  <div class="form">
+    <div class="formhead">
+      <h1>Select the game for the next memecup!</h1>
+    </div>
+   <div class="formtop" style="border-top-left-radius: 5px;border-top-right-radius: 5px;margin-top:15px;">
+     <h1>What is your discord username and discrim?</h1>
+     <p>Example: Pie#9196</p>
+   </div>
+   <div class="formbody">
+     <input type="input" name="discorduser" placeholder="User#0000"><br class="mobilestuffino"> or <a style="color:black" draggable="false" href="#">Sign in with discord.</a>
+   </div>
+   <div class="formtop">
+     <h1>Select the game!</h1>
+     <p>Remember that the most voted wins so pick carefully!</p>
+   </div>
+   <div class="formbody" style="border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;">
+    <label class="container">GTA 5
+     <input type="radio" name="game" value="GTA 5">
+     <span class="checkmark"></span>
+     <span class="checkmark2"></span>
+    </label>
+    <label class="container">Roblox
+     <input type="radio" name="game" value="roblox">
+     <span class="checkmark"></span>
+     <span class="checkmark2"></span>
+    </label>
+    <label class="container">Overwatch
+     <input type="radio" name="game" value="overwatch">
+     <span class="checkmark"></span>
+     <span class="checkmark2"></span>
+    </label>
+   </div>
+   <div class="formreminder">
+     <h1>If you want another game to be added,<br>please dm Pie#9196!</h1>
+   </div>
+   <div class="formbody" style="border-top-left-radius: 5px;border-top-right-radius: 5px;">
+     <input type="submit" value="Submit">
+   </div>
+ </div>
+ </form>
+ <footer>
+   <h1><a draggable="false" style="text-decoration:none;color:#212121" href="https://twitter.com/search?q=%23memecup"><span style="font-weight:500;color:#383838">#</span>Memecup</a></h1>
+ <p>Proudly designed and created by <a style="text-decoration:none;color:#cc8e00" draggable="false" href="#">Pie#9196</a> and <a id="some" style="text-decoration:none;color:#383838;cursor:pointer">some</a><span id="someabove"> (hah)</span> friends.</p>
+ </footer>
+ <div id="somegame" style="height:100%;">
+   <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7-YPYUC9bS4" style="border: none;margin-bottom:-4px;"></iframe>
+   <div id="somegamebottom" style="height:0;">
+   </div>
+ </div>
+</body>
+</html>
