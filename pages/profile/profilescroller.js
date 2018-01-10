@@ -1,4 +1,8 @@
 window.onload = () => {
+    if (document.documentElement.clientWidth < 1040) {
+        return
+    }
+
     let rolemenu = document.querySelector('div.pfp');
     let profile = document.querySelector('div.profile');
     let rolemenutop = rolemenu.getBoundingClientRect().top;

@@ -130,4 +130,6 @@ window.onhashchange = () => {
         dropdown = document.querySelector(dropdownopener.getAttribute('dropdown'))
         hide(dropdown);
     }
+
+    // Load page
 }

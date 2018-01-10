@@ -6,5 +6,34 @@ body {
 }
 
 .profile {
-    background: red;
+    width: calc(100% - 10px);
+    word-wrap: break-word;
+    margin-top: 100px;
+    background: white;
+    padding: 0px 5px;
+}
+
+.pfp {
+    position: relative;
+    display: inline-block;
+}
+
+.pfp .picture {
+    position: absolute;
+    border-radius: 1000px;
+    width: 100px;
+    top: -50px;
+    left: 10px;
+}
+.pfp .circle {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-width: 3px;
+    top: 30px;
+    left: 84px;
+}
+
+.pfp .roles {
+    display: none;
 }
