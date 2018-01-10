@@ -154,18 +154,6 @@ a {
     font-size: 32px;
 }
 
-.usernameinfo .nickname .bot {
-    background-color: #7289da;
-    border-radius: 6px;
-    color: #ffffff;
-    font-weight: 500;
-    padding: 3px 6px;
-    text-transform: uppercase;
-    vertical-align: middle;
-    font-size: 14px;
-    margin-left: 6px;
-}
-
 .usernameinfo .tag {
     margin-top: -15px;
     margin-left: 1px;

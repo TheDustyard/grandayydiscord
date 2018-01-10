@@ -6,34 +6,77 @@ body {
 }
 
 .profile {
-    width: calc(100% - 10px);
+    width: calc(100%);
     word-wrap: break-word;
-    margin-top: 100px;
-    background: white;
-    padding: 0px 5px;
+    background: #f4f4f4;
 }
 
 .pfp {
+    display: block;
+    width: 100%;
     position: relative;
-    display: inline-block;
+    z-index: 0;
+    height: 400px;
+    width: 100%;
+    background-image: url("https://cdn.discordapp.com/attachments/290708486516637696/364267633702469632/Screenshot_1.png");
+    background-size: 120%;
 }
 
 .pfp .picture {
-    position: absolute;
+    position: relative;
     border-radius: 1000px;
     width: 100px;
-    top: -50px;
-    left: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .pfp .circle {
-    position: absolute;
+    position: relative;
     height: 20px;
     width: 20px;
     border-width: 3px;
-    top: 30px;
-    left: 84px;
+    top: 25%;
+    left: 50%;
+    transform: translate(calc(-50% + 40px), calc(-50% + 30px));
 }
 
 .pfp .roles {
     display: none;
+}
+
+.usernameinfo {
+    margin-top: -10px;
+}
+
+.usernameinfo .backbar span {
+    display: inline;
+    font-size: 25px;
+    color: #777777;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 0px 10px;
+    margin-left: 10px;
+}
+.usernameinfo .backbar {
+    text-align: left;
+    border-bottom: .4px solid #b7b7b7;
+    width: calc(100% - 20px);
+    height: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.usernameinfo .nickname {
+    display: inline-block;
+}
+.usernameinfo .nick {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: calc(100% - 50px);
+}
+.usernameinfo .bot {
+    vertical-align: middle;
 }

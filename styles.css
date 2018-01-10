@@ -23,8 +23,17 @@ iframe {
 
 iframe.content {
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     display: block;
+}
+
+.wrapper {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    height: calc(100% - 60px);
+    width: 100%;
+    display: block;
+    position: relative;
 }
 
 header {
